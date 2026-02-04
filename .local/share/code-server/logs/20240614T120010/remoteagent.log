@@ -1,0 +1,5 @@
+2024-06-14 12:00:10.482 [info] Installing extension: vscodevim.vim
+2024-06-14 12:00:11.708 [info] Extracted extension to /home/ide-dev/.local/share/code-server/extensions/.6f490146-20c8-4e3a-b449-740d126b2775: vscodevim.vim
+2024-06-14 12:00:11.717 [info] Renamed to /home/ide-dev/.local/share/code-server/extensions/vscodevim.vim-1.27.2
+2024-06-14 12:00:11.720 [info] Extracting extension completed. vscodevim.vim
+2024-06-14 12:00:11.726 [info] Extension installed successfully: vscodevim.vim

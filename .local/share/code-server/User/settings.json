@@ -1,0 +1,36 @@
+{
+    // https://stackoverflow.com/questions/36868021/is-it-possible-to-have-a-global-launch-json-file
+    // https://github.com/Microsoft/vscode/issues/18401#issuecomment-272400316
+    // https://github.com/Dart-Code/Dart-Code/issues/1769
+    "launch": {
+      "version": "0.2.0",
+      "configurations": [
+          {
+              "name": "Launch Program",
+              "request": "launch",
+              "type": "dart",
+              "program": "lib/main.dart",
+              "args": ["-d", "web-server", "--web-hostname", "0.0.0.0", "--web-port", "8080"]
+          }
+      ]
+    },
+    "dart.flutterSdkPath": "/home/ide-dev/flutter",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "terminal.integrated.defaultProfile": "bash",
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.startupEditor": "none",
+    "extensions.autoCheckUpdates": false,
+    "extensions.autoUpdate": false
+}

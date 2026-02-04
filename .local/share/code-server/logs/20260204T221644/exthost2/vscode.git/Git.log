@@ -1,0 +1,51 @@
+2026-02-04 22:21:40.165 [info] Log level: Info
+2026-02-04 22:21:40.165 [info] Validating found git in: "git"
+2026-02-04 22:21:40.165 [info] Using git "2.30.2" from "git"
+2026-02-04 22:21:40.165 [info] > git rev-parse --show-toplevel [9ms]
+2026-02-04 22:21:40.165 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-02-04 22:21:40.165 [info] > git rev-parse --show-toplevel [3ms]
+2026-02-04 22:21:40.165 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-02-04 22:21:40.165 [info] > git rev-parse --show-toplevel [3ms]
+2026-02-04 22:21:40.165 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-02-04 22:21:40.165 [info] > git rev-parse --show-toplevel [4ms]
+2026-02-04 22:21:40.165 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-02-04 22:21:40.165 [info] > git rev-parse --show-toplevel [3ms]
+2026-02-04 22:21:40.165 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-02-04 22:21:40.165 [info] > git rev-parse --show-toplevel [53ms]
+2026-02-04 22:21:40.165 [info] > git rev-parse --git-dir --git-common-dir [3ms]
+2026-02-04 22:21:40.165 [info] Open repository: /home/ide-dev/.oh-my-bash
+2026-02-04 22:21:40.165 [info] > git rev-parse --show-toplevel [11ms]
+2026-02-04 22:21:40.165 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-02-04 22:21:40.165 [info] > git rev-parse --show-toplevel [16ms]
+2026-02-04 22:21:40.165 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-02-04 22:21:40.165 [info] > git rev-parse --show-toplevel [79ms]
+2026-02-04 22:21:40.165 [info] > git config --get commit.template [120ms]
+2026-02-04 22:21:40.165 [info] > git rev-parse --git-dir --git-common-dir [12ms]
+2026-02-04 22:21:40.165 [info] Open repository: /home/ide-dev/flutter
+2026-02-04 22:21:40.165 [info] > git config --get commit.template [13ms]
+2026-02-04 22:21:40.165 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [167ms]
+2026-02-04 22:21:40.165 [info] > git status -z -uall [86ms]
+2026-02-04 22:21:40.165 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/stable refs/remotes/stable [679ms]
+2026-02-04 22:21:40.165 [info] > git config --get commit.template [487ms]
+2026-02-04 22:21:40.165 [info] > git check-ignore -v -z --stdin [21ms]
+2026-02-04 22:21:40.165 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [51ms]
+2026-02-04 22:21:40.165 [info] > git check-ignore -v -z --stdin [42ms]
+2026-02-04 22:21:40.165 [info] > git status -z -uall [61ms]
+2026-02-04 22:21:40.165 [info] > git rev-parse --show-toplevel [156ms]
+2026-02-04 22:21:40.165 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-02-04 22:21:40.332 [info] > git check-ignore -v -z --stdin [11ms]
+2026-02-04 22:21:40.341 [info] > git check-ignore -v -z --stdin [10ms]
+2026-02-04 22:21:40.752 [info] > git status -z -uall [1011ms]
+2026-02-04 22:21:42.694 [info] > git config --get commit.template [28ms]
+2026-02-04 22:21:42.768 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/stable refs/remotes/stable [61ms]
+2026-02-04 22:21:43.147 [info] > git status -z -uall [343ms]
+2026-02-04 22:30:05.699 [info] > git rev-parse --show-toplevel [2ms]
+2026-02-04 22:30:05.707 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2026-02-04 22:30:05.718 [info] Open repository: /home/ide-dev
+2026-02-04 22:30:05.738 [info] No remotes found in the git config file.
+2026-02-04 22:30:05.739 [info] > git config --get commit.template [10ms]
+2026-02-04 22:30:05.740 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2026-02-04 22:30:05.853 [info] > git status -z -uall [105ms] (cancelled)
+2026-02-04 22:30:06.501 [info] > git check-ignore -v -z --stdin [20ms]
+2026-02-04 22:30:06.504 [info] > git check-ignore -v -z --stdin [14ms]
+2026-02-04 22:30:06.505 [info] > git check-ignore -v -z --stdin [7ms]

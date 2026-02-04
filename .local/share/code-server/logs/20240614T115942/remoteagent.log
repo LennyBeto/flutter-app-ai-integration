@@ -1,0 +1,14 @@
+2024-06-14 11:59:42.596 [info] Started initializing default profile extensions in extensions installation folder. file:///home/ide-dev/.local/share/code-server/extensions
+2024-06-14 11:59:42.891 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/ide-dev/.local/share/code-server/extensions
+2024-06-14 11:59:42.914 [info] Installing extension: dart-code.flutter
+2024-06-14 11:59:43.551 [info] Getting Manifest... dart-code.dart-code
+2024-06-14 11:59:44.684 [info] Installing extension: dart-code.dart-code dart-code.flutter
+2024-06-14 11:59:50.364 [info] Extension signature verification: dart-code.dart-code. Verification status: Unverified.
+2024-06-14 12:00:09.146 [info] Extracted extension to /home/ide-dev/.local/share/code-server/extensions/.42566e9c-6455-4069-abd5-fb3b2419fbe8: dart-code.dart-code
+2024-06-14 12:00:09.157 [info] Renamed to /home/ide-dev/.local/share/code-server/extensions/dart-code.dart-code-3.90.0-universal
+2024-06-14 12:00:09.161 [info] Extracting extension completed. dart-code.dart-code
+2024-06-14 12:00:09.475 [info] Extracted extension to /home/ide-dev/.local/share/code-server/extensions/.5bb8e2db-06d8-4188-9e35-040ea971424c: dart-code.flutter
+2024-06-14 12:00:09.480 [info] Renamed to /home/ide-dev/.local/share/code-server/extensions/dart-code.flutter-3.83.20240201
+2024-06-14 12:00:09.482 [info] Extracting extension completed. dart-code.flutter
+2024-06-14 12:00:09.493 [info] Extension installed successfully: dart-code.dart-code
+2024-06-14 12:00:09.493 [info] Extension installed successfully: dart-code.flutter

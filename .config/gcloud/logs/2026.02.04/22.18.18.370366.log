@@ -1,0 +1,20 @@
+2026-02-04 22:18:18,527 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2026-02-04 22:18:20,701 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'cp']
+2026-02-04 22:18:20,709 DEBUG    root            Running [gcloud.storage.cp] with arguments: [DESTINATION: "/home/ide-dev", SOURCE:1: "['gs://cloud-training/OCBL453/photo-discovery/ag-web.zip']"]
+2026-02-04 22:18:20,893 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/338627235002-compute@developer.gserviceaccount.com/?recursive=true
+2026-02-04 22:18:20,898 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2026-02-04 22:18:20,900 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/338627235002-compute@developer.gserviceaccount.com/?recursive=true HTTP/1.1" 200 142
+2026-02-04 22:18:20,924 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/338627235002-compute@developer.gserviceaccount.com/token
+2026-02-04 22:18:20,927 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/338627235002-compute@developer.gserviceaccount.com/token HTTP/1.1" 200 869
+2026-02-04 22:18:20,950 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-04 22:18:21,052 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/cloud-training/o/OCBL453%2Fphoto-discovery%2Fag-web.zip?alt=json&projection=noAcl HTTP/1.1" 200 895
+2026-02-04 22:18:21,059 INFO     ___FILE_ONLY___ Copying gs://cloud-training/OCBL453/photo-discovery/ag-web.zip to file:///home/ide-dev/ag-web.zip
+
+2026-02-04 22:18:21,060 INFO     root            Using low CPU count, single-file workload config.
+2026-02-04 22:18:21,070 INFO     ___FILE_ONLY___   Completed files 0 | 0B
+2026-02-04 22:18:21,074 DEBUG    root            Adding 1 process with 2 threads. Total processes: 1. Total threads: 2.
+2026-02-04 22:18:21,131 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-04 22:18:21,230 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /download/storage/v1/b/cloud-training/o/OCBL453%2Fphoto-discovery%2Fag-web.zip?generation=1755496476027350&alt=media HTTP/1.1" 206 7303
+2026-02-04 22:18:21,280 DEBUG    root            Chosen display Format:default
+2026-02-04 22:18:21,282 INFO     root            Display format: "default"
+2026-02-04 22:18:21,283 DEBUG    root            SDK update checks are disabled.
