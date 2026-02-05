@@ -1,0 +1,722 @@
+qhandleUnescapeErrorurilogEventbeginArgumentsendArgumentshandleObjectPatternFieldshandleAsyncModifierbeginAwaitExpressionendAwaitExpressionendInvalidAwaitExpression
+beginBlockendBlockhandleInvalidTopLevelBlockbeginCascade
+endCascadebeginCaseExpressionendCaseExpression beginClassOrMixinOrExtensionBodyendClassOrMixinOrExtensionBody/beginClassOrMixinOrNamedMixinApplicationPreludebeginClassDeclarationhandleClassExtendshandleImplementshandleClassHeaderhandleRecoverDeclarationHeaderendClassDeclarationbeginMixinDeclarationhandleMixinOnhandleMixinHeaderhandleRecoverMixinHeaderendMixinDeclaration%beginUncategorizedTopLevelDeclaration beginExtensionDeclarationPreludebeginExtensionDeclarationendExtensionDeclarationbeginExtensionTypeDeclarationendExtensionTypeDeclarationbeginPrimaryConstructorendPrimaryConstructorhandleNoPrimaryConstructorbeginCombinatorsendCombinatorsbeginCompilationUnithandleDirectivesOnlyendCompilationUnitbeginConstLiteralendConstLiteralbeginConstructorReferenceendConstructorReferencebeginDoWhileStatementendDoWhileStatementbeginDoWhileStatementBodyendDoWhileStatementBodybeginWhileStatementBodyendWhileStatementBody	beginEnumendEnumendEnumConstructorhandleEnumElementshandleEnumHeaderhandleEnumElementendEnumFactoryMethodbeginExport	endExporthandleExtraneousExpressionhandleExpressionStatementbeginFactoryMethodendClassFactoryMethodendMixinFactoryMethodendExtensionFactoryMethodendExtensionTypeFactoryMethodbeginFormalParameterendFormalParameterhandleNoFormalParametersbeginFormalParametersendFormalParametersendClassFieldsendMixinFieldsendExtensionFieldsendExtensionTypeFieldsendEnumFieldsendEnumMethod"handleForInitializerEmptyStatement'handleForInitializerExpressionStatement,handleForInitializerLocalVariableDeclaration-handleForInitializerPatternVariableAssignmentbeginForStatementhandleForLoopPartsendForStatementbeginForStatementBodyendForStatementBodyhandleForInLoopPartsendForInbeginForInExpressionendForInExpressionbeginForInBodyendForInBodybeginNamedFunctionExpressionendNamedFunctionExpressionbeginLocalFunctionDeclarationendLocalFunctionDeclarationbeginBlockFunctionBodyendBlockFunctionBodyhandleNoFunctionBodyhandleFunctionBodySkippedbeginFunctionNameendFunctionNamebeginTypedef
+endTypedefhandleClassWithClausehandleClassNoWithClausehandleEnumWithClausehandleEnumNoWithClausehandleMixinWithClausebeginNamedMixinApplication%handleNamedMixinApplicationWithClauseendNamedMixinApplication	beginHideendHidehandleIdentifierListbeginTypeListendTypeListbeginIfStatementendIfStatementbeginThenStatementendThenStatementbeginElseStatementendElseStatementbeginImporthandleImportPrefix	endImporthandleRecoverImportbeginConditionalUrisendConditionalUrisbeginConditionalUriendConditionalUrihandleDottedNamebeginImplicitCreationExpressionendImplicitCreationExpressionbeginInitializedIdentifierendInitializedIdentifierbeginFieldInitializerendFieldInitializerhandleNoFieldInitializerbeginVariableInitializerendVariableInitializerhandleNoVariableInitializerbeginInitializerendInitializerbeginInitializersendInitializershandleNoInitializershandleInvalidExpressionhandleInvalidFunctionBodyhandleInvalidTypeReferencehandleLabelbeginLabeledStatementendLabeledStatementbeginLibraryAugmentationendLibraryAugmentationbeginLibraryNameendLibraryNamehandleLiteralMapEntryhandleMapPatternEntrybeginLiteralStringhandleInterpolationExpressionendLiteralStringhandleStringJuxtapositionbeginMemberhandleInvalidMember	endMemberbeginMethodendClassMethodendMixinMethodendExtensionMethodendExtensionTypeMethodendClassConstructorendMixinConstructorendExtensionConstructorendExtensionTypeConstructorbeginMetadataStarendMetadataStarbeginMetadataendMetadatabeginOptionalFormalParametersendOptionalFormalParameters	beginPartendPartbeginPartOf	endPartOfbeginRedirectingFactoryBodyendRedirectingFactoryBodybeginReturnStatementhandleNativeFunctionBodyhandleNativeFunctionBodyIgnoredhandleNativeFunctionBodySkippedhandleEmptyFunctionBodyhandleExpressionFunctionBodyendReturnStatement
+handleSend	beginShowendShowbeginSwitchStatementendSwitchStatementbeginSwitchExpressionendSwitchExpressionbeginSwitchBlockendSwitchBlockbeginSwitchExpressionBlockendSwitchExpressionBlockbeginLiteralSymbolendLiteralSymbolhandleThrowExpressionbeginRethrowStatementendRethrowStatementendTopLevelDeclaration handleInvalidTopLevelDeclarationbeginTopLevelMemberbeginFieldsendTopLevelFieldsbeginTopLevelMethodendTopLevelMethodbeginTryStatementbeginCatchClauseendCatchClausehandleCatchBlockhandleFinallyBlockendTryStatement
+handleTypehandleNonNullAssertExpressionhandleNullAssertPatternhandleNullCheckPatternhandleAssignedVariablePatternhandleDeclaredVariablePatternhandleWildcardPatternhandleNoNamebeginRecordTypeendRecordTypebeginRecordTypeEntryendRecordTypeEntrybeginRecordTypeNamedFieldsendRecordTypeNamedFieldsbeginFunctionTypeendFunctionTypebeginTypeArgumentsendTypeArgumentshandleInvalidTypeArgumentshandleNoTypeArgumentsbeginTypeVariablehandleTypeVariablesDefinedendTypeVariablebeginTypeVariablesendTypeVariables reportVarianceModifierNotEnabledbeginFunctionExpressionendFunctionExpressionbeginVariablesDeclarationendVariablesDeclarationbeginWhileStatementendWhileStatementbeginAsOperatorTypeendAsOperatorTypehandleAsOperatorhandleCastPatternhandleAssignmentExpressionbeginBinaryExpressionendBinaryExpressionbeginBinaryPatternendBinaryPatternhandleEndingBinaryExpressionbeginConditionalExpression handleConditionalExpressionColonendConditionalExpressionbeginConstExpressionendConstExpressionhandleConstFactorybeginForControlFlowendForControlFlowendForInControlFlowbeginIfControlFlowhandleThenControlFlowhandleElseControlFlowendIfControlFlowendIfElseControlFlowhandleSpreadExpressionhandleRestPattern!beginFunctionTypedFormalParameterendFunctionTypedFormalParameterhandleIdentifierhandleIndexedExpressionbeginIsOperatorTypeendIsOperatorTypehandleIsOperatorhandleLiteralBoolhandleBreakStatementhandleContinueStatementhandleEmptyStatementbeginAssert	endAsserthandleLiteralDoublehandleLiteralInthandleLiteralListhandleListPatternhandleLiteralSetOrMaphandleMapPatternhandleLiteralNullhandleNativeClausehandleNamedArgumenthandlePatternFieldhandleNamedRecordFieldbeginNewExpressionendNewExpressionhandleNoArguments:handleNoConstructorReferenceContinuationAfterTypeArguments&handleNoTypeNameInConstructorReferencehandleNoTypehandleNoTypeVariableshandleOperatorhandleSwitchCaseNoWhenClause!handleSwitchExpressionCasePatternhandleSymbolVoidhandleOperatorNamehandleInvalidOperatorNamehandleParenthesizedConditionbeginPatternbeginPatternGuard+beginParenthesizedExpressionOrRecordLiteralbeginSwitchCaseWhenClauseendRecordLiteralhandleRecordPattern
+endPatternendPatternGuardendParenthesizedExpressionendSwitchCaseWhenClausehandleParenthesizedPatternbeginConstantPatternendConstantPatternhandleObjectPatternhandleQualifiedhandleStringParthandleSuperExpressionhandleAugmentSuperExpressionbeginSwitchCaseendSwitchCasebeginSwitchExpressionCaseendSwitchExpressionCasehandleThisExpression&handleUnaryPostfixAssignmentExpressionhandleUnaryPrefixExpressionhandleRelationalPattern%handleUnaryPrefixAssignmentExpression*beginFormalParameterDefaultValueExpression(endFormalParameterDefaultValueExpressionhandleValuedFormalParameter!handleFormalParameterWithoutValuehandleVoidKeyword"handleVoidKeywordWithTypeArgumentsbeginYieldStatementendYieldStatementendInvalidYieldStatementhandleRecoverableErrorhandleExperimentNotEnabledhandleErrorTokenhandleInvalidStatementhandleScripthandleTypeArgumentApplicationhandleNewAsIdentifier)handlePatternVariableDeclarationStatementhandlePatternAssignmentUnescapeErrorListenerListener_fe_analyzer_sharedparserlistenerMessageMessageCodeToken
+ErrorTokenAssert	BlockKindConstructorReferenceContextFormalParameterKindIdentifierContextDeclarationHeaderKindDeclarationKind
+MemberKindvoidintUriStringboolparseDirectivesParserinAssignmentPatternExperimentalFlagvariancegetExperimentNotEnabledMessageassertionMessageoverrideUnescapeErrorListenerÍäÒôWw.%¡ìT'V†A6      ../experiments/errors.dart  -  ../experiments/flags.dartp‰MessageMessageCode Q  ../messages/codes.dart«µToken   ../scanner/token.dartİì
+ErrorToken ¹  ../scanner/error_token.dart‚‚Assert ğ  assert.dart‚+‚9	BlockKind ‚  block_kind.dart‚h‚ˆConstructorReferenceContext ‚=  "constructor_reference_context.dart‚¯‚ÇFormalParameterKind ‚Œ  formal_parameter_kind.dart‚ëƒIdentifierContext ‚Ë  identifier_context.dartƒ#ƒNDeclarationHeaderKindDeclarationKind ƒ  declaration_kind.dartƒkƒz
+MemberKind ƒR  member_kind.dart    	dart:coreÀ ÔF À"Ú‰ N€œ€Ø€Ù,P‹Œ·¸îï‚‚‚;‚<‚Š‚‹‚É‚ÊƒƒƒPƒQƒ|ƒ}ƒ¤ƒÀ„„„„M„c„g„³„·„ı…M…c…g…¶…Á…ó†††,†-†S†T†—†²†¶†·‡‡1‡‡¦‡ª‡«‡ãˆ%ˆDˆHˆIˆ”ˆÀˆÁˆü‰‰X‰y‰}‰~‰¹‰×‰ùŠ:ŠbŠfŠgŠŠŸŠ°Šú‹‹‹‹`‹‹¬‹Ş‹ßŒŒŒŒ3Œ7Œ8ŒiŒjŒ²ŒÒŒÖŒ×%p~ÌÍbh¥ÌJNOœµ»Eci’ÙÚ‘‘P‘š‘ ‘í’’’:’S’m’…’¢’»’Ö’ï“““K“z“Ë””&”h”†”Š”‹”Ô”é••L•h•l•m•­•¾•Ğ•ã•ú–– –:–P– –½–Á–Â—
+—L—Š—²—æ—ø˜˜&˜j˜”˜˜˜™˜Ö˜ë˜ş™=™_™c™d™—™ÛšššXšršªšÃšÇšÈ›››,›C›T›n››º›¾›¿›õœ7œuœ·œêœû7Ko“—˜ÕêEgklª°ÙŸŸŸgŸxŸ~ŸÌ   H ‹ Œ Ü ó ù¡F¡¡¡Ú¢¢!¢.¢w¢ ¢Æ¢Ê¢Ë££/£5£‚£Î£Ï¤¤T¤x¤’¤Ÿ¤ì¥¥A¥E¥F¥’¥Â¥õ¦¦¦¦h¦¶¦Ô¦Ú§
+§§%§b§r§§Ø§ü¨ ¨¨P¨€¨Ç¨È¨ğ¨ñ©©1©5©6©b©c©œ©ã©éª/ªpªª¢ª£ª×ªøªüªı«&«'«M«k«o«p«¡«¢«ç¬8¬^¬b¬c¬¬‘¬­¬ê­­­­B­C­q­—­›­œ­Ë­Ì­ø®® ®!®H®I®†®£®¹®ş¯'¯=¯A¯B¯‹¯œ¯°¯å¯ü°°+°@°M°œ°Î±±"±j±n±o±±½±Ô²²9²=²>²~²²®²Å²Ù²ó³1³M³Q³R³€³‘³±³Ş³û³ÿ´ ´´]´´¢´£´Æ´Çµµµ!µ:µNµ‡µŸµ£µ¤µí¶<¶`¶¢¶È¶Ì¶Í¶ı·"·&·'·a·Ÿ·î¸ ¸!¸?¸¸£¸§¸¨¸Æ¹¹F¹‡¹‹¹Œ¹®¹îº.ºoºsºtºšºÚ»»[»_»`»°»è»é¼¼¼9¼^¼u¼”¼±¼Ñ¼ğ½½½½V½z½~½½½½¾½Ú¾ ¾B¾F¾G¾Š¾›¾­¾º¾æ¾ì¿¿#¿?¿Z¿v¿¿­¿Å¿ã¿ôÀ @À @$À @<À @@À @AÀ @„À @•À @§À @´À @àÀ @æÀ AÀ AÀ A9À ATÀ ApÀ AŠÀ A§À A¿À AİÀ AîÀ BÀ BÀ B^À BrÀ B‰À BŸÀ B¶À BËÀ BãÀ BöÀ CÀ CÀ C2À CEÀ CIÀ CJÀ C‘À C¢À C´À CÁÀ CíÀ CóÀ DÀ D.À DJÀ DeÀ DÀ D›À D¸À DĞÀ DîÀ DÿÀ EÀ E/À EoÀ EƒÀ EšÀ E°À EÇÀ EÜÀ EôÀ FÀ F À F/À FCÀ FVÀ FZÀ F[À F§À F¸À FÊÀ F×À GÀ G	À G)À GHÀ GdÀ GÀ G›À GµÀ GÒÀ GêÀ HÀ HÀ H1À HIÀ H‰À HÀ H´À HÊÀ HáÀ HöÀ IÀ I!À I:À IIÀ I]À IpÀ ItÀ IuÀ I¸À IÉÀ IÛÀ IèÀ JÀ JÀ J:À JPÀ JlÀ J‡À J£À J½À JÚÀ JòÀ KÀ K!À K9À KQÀ KeÀ K|À K’À K©À K¾À KÖÀ KéÀ LÀ LÀ L%À L8À L<À L=À LÀ L’À L¦À LÛÀ LòÀ MÀ M!À M6À MCÀ MÀ M¿À MÓÀ NÀ NÀ N À NpÀ N‘À NÊÀ NøÀ NüÀ NıÀ OMÀ OsÀ O½À OğÀ OôÀ OõÀ PEÀ P{À P°À PÿÀ Q7À Q;À Q<À QŒÀ QÂÀ QóÀ R)À RNÀ RÀ R‘À R’À RÔÀ RûÀ S$À S%À SmÀ SºÀ SøÀ T5À TnÀ ToÀ T˜À T¶À TºÀ T»À TèÀ TéÀ UÀ U5À U9À U:À U…À UÒÀ VÀ VCÀ V“À V²À VíÀ W,À WtÀ WuÀ WÄÀ WæÀ WıÀ XÀ XÀ X.À X/À XXÀ XyÀ X}À X~À X¤À X¥À XÈÀ XãÀ XçÀ XèÀ Y4À YƒÀ YÒÀ ZÀ ZÀ Z3À ZJÀ Z~À ZÀ ZÃÀ [À [YÀ [–À [œÀ [±À [ÈÀ [ÚÀ [îÀ [ûÀ \À \ À \7À \jÀ \À \ÇÀ \ËÀ \ÌÀ ]À ])À ]@À ]uÀ ]vÀ ]”À ]šÀ ]¯À ]ÀÀ ]×À ]ëÀ ]øÀ ^À ^À ^4À ^KÀ ^~À ^³À ^ØÀ ^ÜÀ ^İÀ _%À _tÀ _ÃÀ _íÀ `À `À `iÀ `²À aÀ aOÀ a–À aÊÀ bÀ b8À b<À b=À bhÀ bˆÀ bŒÀ bÀ bÕÀ bÛÀ c)À cMÀ c•À c–À c¿À cÀÀ cøÀ dÀ dÀ dÀ d?À d@À doÀ duÀ dºÀ dËÀ dßÀ dùÀ eÀ e0À e6À e€À e‘À e«À eÈÀ eîÀ f7À fZÀ f^À f_À fŸÀ f´À fÓÀ gÀ g&À g*À g+À g\À gÀ g¢À g¦À g§À gçÀ güÀ hÀ h!À hiÀ hÀ hÏÀ hïÀ hóÀ hôÀ i%À iGÀ iiÀ imÀ inÀ i®À iÃÀ iâÀ ièÀ j(À j^À jÀ j±À jµÀ j¶À jïÀ k7À kÀ k‡À kÔÀ k÷À lÀ l+À lDÀ l^À lvÀ l“À l¬À lÇÀ làÀ lõÀ löÀ m?À mTÀ mfÀ m…À mÇÀ møÀ müÀ mıÀ n@À nQÀ ncÀ nvÀ nÀ nŸÀ n³À nØÀ nŞÀ o&À osÀ oÃÀ pÀ pRÀ p„À p«À p¯À p°À p×À pØÀ qÀ q;À q_À quÀ qyÀ qzÀ q£À qÃÀ qÇÀ qÈÀ qíÀ qîÀ rÀ r(À r,À r-À rUÀ rVÀ rÀ r¬À r°À r±À rÛÀ rÜÀ sÀ s"À s&À s'À sQÀ sRÀ syÀ s˜À sœÀ sÀ sÈÀ sÉÀ tÀ tNÀ t€À t¶À tüÀ uÀ uÀ uÀ u\À umÀ uyÀ u’À u¬À uÀÀ vÀ v'À v+À v,À vgÀ v¡À vãÀ w1À wJÀ wdÀ wxÀ w§À wÇÀ wËÀ wÌÀ wøÀ wùÀ x À xAÀ xEÀ xFÀ xuÀ xvÀ x»À xÏÀ yÀ y,À y{À y›À yŸÀ y À yÜÀ yøÀ yüÀ yıÀ z4À z5À zÀ z­À z±À z²À zäÀ zåÀ {À {?À {CÀ {DÀ {qÀ {rÀ {¯À {ÎÀ |
+À |,À |0À |1À |_À |À |²À |¶À |·À |çÀ |èÀ }'À }GÀ }À }¦À }ªÀ }«À }ÚÀ ~À ~3À ~7À ~8À ~`À ~aÀ ~†À ~®À ~²À ~³À ~ÜÀ ~İÀ #À AÀ EÀ FÀ fÀ †À ŠÀ ‹À ÙÀ €&À €KÀ €yÀ €œÀ € À €¡À €èÀ 8À rÀ ¢À ÇÀ ËÀ ÌÀ ‚À ‚eÀ ‚tÀ ‚¥À ‚ËÀ ‚ÏÀ ‚ĞÀ ‚òÀ ƒ	À ƒÀ ƒÀ ƒKÀ ƒLÀ ƒyÀ ƒ›À ƒŸÀ ƒ À ƒïÀ ƒğÀ „:À „KÀ „WÀ „vÀ „»À „àÀ „äÀ „åÀ …À …À …KÀ …\À …ŠÀ …×À …ôÀ …øÀ …ùÀ †5À †VÀ †ZÀ †[À †ªÀ †ÔÀ ‡À ‡1À ‡5À ‡6À ‡`À ‡aÀ ‡±À ‡²À ‡ôÀ ˆÀ ˆÀ ˆÀ ˆ_À ˆ„À ˆˆÀ ˆ‰À ˆØÀ ‰À ‰`À ‰ƒÀ ‰›À ‰œÀ ‰×À ‰èÀ ŠÀ Š4À Š8À Š9À ŠtÀ Š±À ŠÇÀ ŠùÀ ‹9À ‹yÀ ‹­À ‹ÙÀ ‹îÀ ŒÀ Œ
+À ŒÀ ŒZÀ ŒkÀ Œ·À À À 3À ZÀ uÀ ‘À «À ÈÀ æÀ ıÀ À À WÀ hÀ |À ±À ÈÀ âÀ ÷À À À dÀ –À ³À ·À ¸À üÀ À !À VÀ mÀ ‡À œÀ ±À ¾À ‘	À ‘;À ‘{À ‘À ‘×À ‘ÛÀ ‘ÜÀ ’$À ’5À ’IÀ ’~À ’•À ’¯À ’ÄÀ ’ÙÀ ’æÀ “5À “gÀ “§À “»À ”À ”À ”À ”UÀ ”fÀ ”zÀ ”¯À ”ÆÀ ”àÀ ”õÀ •
+À •À •XÀ •œÀ •ÜÀ •ğÀ –8À –<À –=À –†À –—À –«À –àÀ –÷À —À —&À —;À —HÀ —˜À —ÊÀ ˜
+À ˜À ˜fÀ ˜jÀ ˜kÀ ˜´À ˜ÅÀ ˜ÙÀ ™À ™%À ™?À ™TÀ ™iÀ ™vÀ ™ÆÀ ™øÀ š8À šLÀ š”À š˜À š™À šæÀ š÷À ›À ›@À ›WÀ ›qÀ ›†À ››À ›¨À ›êÀ œ.À œnÀ œ‚À œÊÀ œÎÀ œÏÀ À 'À 8À LÀ À ˜À ²À ÇÀ ÜÀ éÀ /À sÀ ³À ÌÀ ŸÀ ŸÀ ŸÀ ŸBÀ ŸCÀ ŸgÀ Ÿ…À Ÿ‰À ŸŠÀ Ÿ¯À Ÿ°À ŸïÀ  À  À  ]À  oÀ  ¿À  ÙÀ  İÀ  ŞÀ ¡À ¡À ¡8À ¡mÀ ¡—À ¡›À ¡œÀ ¡½À ¡¾À ¡øÀ ¢	À ¢À ¢JÀ ¢`À ¢dÀ ¢eÀ ¢ˆÀ ¢‰À ¢ÈÀ ¢ÙÀ £À £À £]À £kÀ £}À £ÈÀ £àÀ £äÀ £åÀ ¤À ¤À ¤^À ¤†À ¤ŠÀ ¤‹À ¤·À ¤¸À ¤åÀ ¥'À ¥mÀ ¥‘À ¥•À ¥–À ¥ãÀ ¦À ¦gÀ ¦~À ¦ËÀ ¦öÀ ¦úÀ ¦ûÀ §GÀ §‰À §ÖÀ ¨À ¨À ¨À ¨GÀ ¨yÀ ¨œÀ ¨ À ¨¡À ¨íÀ ©À ©hÀ ©À ©”À ©•À ©°À ©îÀ ªÀ ªÀ ªÀ ªJÀ ª`À ªdÀ ªeÀ ªŒÀ ªÀ ªÊÀ ªïÀ «À «)À «-À «.À «ZÀ «[À «œÀ «½À «ÁÀ «ÂÀ «ïÀ «ğÀ ¬2À ¬TÀ ¬XÀ ¬YÀ ¬À ¬‚À ¬ËÀ ¬èÀ ¬ìÀ ¬íÀ ­À ­ À ­AÀ ­zÀ ­¡À ­¥À ­¦À ­ĞÀ ­ÑÀ ®À ®0À ®4À ®5À ®vÀ ®—À ®›À ®œÀ ®ÉÀ ®ÊÀ ¯À ¯-À ¯1À ¯2À ¯nÀ ¯¾À °À °)À °/À °aÀ °¥À °åÀ ±/À ±>À ±DÀ ±€À ±ÏÀ ²À ²2À ²WÀ ²[À ²\À ²¤À ²íÀ ³,À ³_À ³eÀ ³zÀ ³‹À ³ÅÀ ³ñÀ ³õÀ ³öÀ ´<À ´xÀ ´~À ´§À ´ÒÀ ´ÓÀ µÀ µPÀ µ€À µ”À µ»À µ×À µòÀ ¶À ¶(À ¶EÀ ¶]À ¶{À ¶˜À ¶™À ¶ãÀ ¶ôÀ ·À ·!À ·FÀ ·bÀ ·hÀ ·ˆÀ ·¢À ·¾À ·ØÀ ·õÀ ¸À ¸+À ¸<À ¸TÀ ¸lÀ ¸ŒÀ ¸À ¸‘À ¸­À ¸õÀ ¸öÀ ¹2À ¹CÀ ¹UÀ ¹iÀ ¹|À ¹“À ¹­À ¹ÂÀ ¹ÏÀ ºÀ º=À ºAÀ ºBÀ ºkÀ ºlÀ º”À º•À ººÀ º×À ºÛÀ ºÜÀ »+À »GÀ »KÀ »LÀ »~À »œÀ » À »¡À »¹À »úÀ ¼À ¼À ¼À ¼XÀ ¼nÀ ¼rÀ ¼sÀ ¼À ¼ÚÀ ½À ½6À ½:À ½;À ½‹À ½·À ½äÀ ¾À ¾À ¾À ¾]À ¾‡À ¾·À ¾ÙÀ ¾İÀ ¾ŞÀ ¿'À ¿hÀ ¿nÀ ¿½À ÀÀ À;À ÀrÀ À›À ÀŸÀ À À ÀèÀ Á3À ÁvÀ Á|À ÁÌÀ ÂÀ ÂjÀ Â·À ÂÇÀ ÃÀ Ã9À ÃbÀ ÃfÀ ÃgÀ Ã·À ÄÀ ÄÀ ÄZÀ Ä{À ÄÀ Ä€À Ä£À Ä»À Ä¿À ÄÀÀ ÄíÀ ÄîÀ Å!À Å'À Å<À ÅUÀ ÅtÀ ÅzÀ Å˜À ÅãÀ Æ.À ÆDÀ Æ”À Æ°À Æ´À ÆµÀ ÆÖÀ Æ×À ÇÀ ÇÀ Ç#À Ç4À ÇAÀ ÇTÀ ÇrÀ Ç“À Ç—À Ç˜À ÇĞÀ ÇÑÀ ÈÀ ÈÀ È"À È;À È{À È¢À È¦À È§À ÈÕÀ ÈÖÀ ÉÀ ÉÀ É.À ÉEÀ ÉYÀ ÉsÀ É¶À ÉÔÀ ÉØÀ ÉÙÀ ÊÀ ÊÀ ÊKÀ ÊjÀ ÊnÀ ÊoÀ ÊÀ ÊİÀ ËÀ Ë/À Ë3À Ë4À Ë`À ËÀ Ë…À Ë†À ËÎÀ ËãÀ ËôÀ ÌÀ Ì7À Ì8À Ì‡À ÌÕÀ ÌùÀ Í6À Í7À Í|À ÍÁÀ ÍæÀ ÍìÀ ÎÀ ÎÀ ÎÀ ÎVÀ ÎnÀ Î¶À ÎÔÀ ÎØÀ ÎÙÀ ÏÀ ÏÀ Ï@À Ï_À ÏcÀ ÏdÀ ÏŸÀ Ï»À ĞÀ ĞÀ ĞÀ ĞÀ ĞFÀ ĞGÀ ĞŠÀ ĞŸÀ Ğ¶À ĞĞÀ ĞåÀ ĞòÀ Ñ0À ÑTÀ ÑXÀ ÑYÀ ÑœÀ Ñ­À ÑºÀ ÑÜÀ ÒÀ ÒÀ ÒZÀ Ò€À Ò„À Ò…À Ò°À Ò±À ÒğÀ ÓÀ ÓÀ ÓÀ ÓCÀ ÓDÀ ÓoÀ ÓÀ Ó“À Ó”À Ó¾À ÓÚÀ ÓŞÀ ÓßÀ Ô*À Ô]À ÔˆÀ Ô¥À Ô©À ÔªÀ ÔÛÀ ÕÀ ÕÀ ÕÀ ÕTÀ ÕrÀ ÕxÀ Õ¹À ÕæÀ ÕçÀ ÖÀ Ö3À Ö7À Ö8À Ö„À Ö®À Ö¯À ÖÿÀ ×8À ×_À ×~À ×‚À ×ƒÀ ×¨À ×ÛÀ ØÀ Ø3À Ø7À Ø8À Ø„À Ø¢À Ø×À ØØÀ Ù À Ù2À Ù_À Ù`À Ù«À ÙêÀ ÚÀ ÚÀ ÚÀ ÚIÀ ÚJÀ ÚsÀ Ú”À Ú˜À Ú™À ÚÉÀ ÚçÀ ÚëÀ ÚìÀ Û6À ÛzÀ Û»À Û¼À ÜÀ Ü@À Ü]À Ü…À Ü¨À Ü¬À Ü­À ÜùÀ İ4À İQÀ İ{À İ À İ¤À İ¥À İïÀ Ş3À Ş_À Ş`À Ş­À ŞÆÀ ŞóÀ ŞôÀ ßAÀ ßZÀ ßŠÀ ß«À ß¯À ß°À ßùÀ àÀ à0À àCÀ à~À àšÀ àÁÀ àãÀ àçÀ àèÀ á4À áIÀ ákÀ áƒÀ á›À áÖÀ áòÀ âÀ âCÀ âGÀ âHÀ âÀ âÙÀ âìÀ ãÀ ãAÀ ãEÀ ãFÀ ã–À ã³À ãàÀ ä&À äCÀ äGÀ äHÀ ä•À ä¬À äåÀ äæÀ å1À åHÀ å\À åvÀ åÁÀ åïÀ åóÀ åôÀ æÀ æÀ æhÀ æªÀ æÆÀ æÊÀ æËÀ æëÀ ç7À çZÀ ç^À ç_À çÀ çÀ ç¹À çÙÀ çİÀ çŞÀ èÀ è2À è6À è7À è_À è|À è€À èÀ èÀ èÚÀ èúÀ èşÀ èÿÀ éÀ é^À éÀ é…À é†À é±À éÑÀ éÕÀ éÖÀ êÀ êÀ êYÀ êŠÀ ê¢À ê¦À ê§À êêÀ ëÀ ë$À ëNÀ ëmÀ ëqÀ ërÀ ë´À ëêÀ ëñÀ ìÀ ì4À ì8À ì9À ìSÀ ì¢À ì¿À ìÃÀ ìÄÀ íÀ íMÀ íšÀ í·À í»À í¼À íÚÀ íéÀ íşÀ îÀ î-À îvÀ îÅÀ îÕÀ îëÀ îñÀ ïÀ ïÀ ïÀ ïfÀ ï¦À ïîÀ ğ
+À ğÀ ğÀ ğ7À ğTÀ ğXÀ ğYÀ ğ–À ğ´À ğ¸À ğ¹À ğãÀ ñÀ ñÀ ñÀ ñSÀ ñ‹À ñµÀ ñÓÀ ñ×À ñØÀ òÀ ò'À ò+À ò,À òVÀ òWÀ ò~À òÀ ò¡À ò¢À òÊÀ òçÀ òëÀ òìÀ ó=À óƒÀ ó‡À óˆÀ óÅÀ ó÷À óûÀ óüÀ ô&À ô>À ôBÀ ôCÀ ôoÀ ôÀ ô”À ô•À ôºÀ ôÔÀ ôØÀ ôÙÀ õ!À õTÀ õ|À õ€À õÀ õ¹À õæÀ õêÀ õëÀ öÀ ö.À ö2À ö3À öwÀ ö·À öÕÀ öÙÀ öÚÀ ÷À ÷PÀ ÷—À ÷¼À ÷ÀÀ ÷ÁÀ ÷ôÀ ø	À øÀ ø8À øKÀ ø™À øÁÀ øÅÀ øÆÀ øİÀ ù À ùÀ ùÀ ùÀ ùkÀ ù’À ù°À ù´À ùµÀ úÀ úFÀ ú‰À úŠÀ úÕÀ ûÀ û*À û.À û/À ûaÀ û¨À ûÇÀ ûËÀ ûÌÀ üÀ ü\À ü‘À ü°À ü´À üµÀ üÊÀ üëÀ ıÀ ıÀ ı	À ıSÀ ıyÀ ı—À ı›À ıœÀ ıÂÀ şÀ şHÀ şyÀ ş¢À ş¦À ş§À şòÀ ÿ À ÿFÀ ÿJÀ ÿKÀ ÿšÀ ÿÀÀ ÿñÀ À À À lÀ –À œÀ éÀ:À‰ÀÕÀÀZÀuÀ¨ÀÉÀÍÀÎÀÀHÀNÀ›ÀìÀ;À‡ÀÊÀÀ'ÀXÀyÀ}À~ÀÊÀÀYÀ}À™ÀİÀüÀ ÀÀRÀ•ÀªÀÛÀÀ(ÀCÀGÀHÀoÀ‹ÀÀÀ×ÀøÀüÀıÀ	"À	kÀ	“À	—À	˜À	éÀ	êÀ
+ À
+À
+1À
+NÀ
+nÀ
+ˆÀ
+ À
+¸À
+ÔÀ
+ØÀ
+ÙÀ
+ÿÀ ÀKÀqÀuÀvÀ¼ÀÜÀàÀáÀÀPÀTÀUÀ‡À®À²À³ÀÀPÀ~À¡À¥À¦ÀâÀÀÀÀOÀPÀ„À»À¿ÀÀÀäÀ!ÀHÀLÀMÀ…À²À¶À·ÀßÀüÀ ÀÀCÀ€À¹ÀíÀñÀòÀ;ÀfÀgÀ¢À¿ÀÀ.À2À3ÀnÀ‹ÀÏÀşÀ%À)À*ÀxÀÅÀÀ[ÀzÀ¶À·ÀşÀNÀ›ÀçÀ ÀCÀÀ¬ÀıÀÀÀEÀ•ÀÛÀùÀ%ÀgÀkÀlÀxÀ”ÀÛÀÀÀÀhÀ·ÀÀQÀÀÂÀÆÀÇÀêÀÀÀÀUÀÀÌÀÀ:À‹ÀÀÀÀÀaÀŸÀğÀÀCÀDÀ“ÀÛÀ"ÀpÀÀÀìÀ 8À >À ‹À ÕÀ êÀ!À!RÀ!‡À!‹À!ŒÀ!ÛÀ!şÀ"À"QÀ"‚À"±À"ÔÀ"ØÀ"Ú€â#    ,  P p‰Œ «µ¸ İìï ‚‚‚ ‚+‚9‚< ‚h‚ˆ‚‹ ‚¯‚Ç‚Ê ‚ëƒƒ ƒ#ƒNƒQ ƒkƒz  ƒ}€ˆƒŒ     ƒ¦]ƒ«  ƒÆƒÏ  ƒ×ƒâ  ƒë
+ƒğ  ƒ÷
+ƒü    „ÀÒ…Ç¹/// A parser event listener that does nothing except throw exceptions
+/// on parser errors.
+///
+/// Events are methods that begin with one of: `begin`, `end`, or `handle`.
+///
+/// Events starting with `begin` and `end` come in pairs. Normally, a
+/// `beginFoo` event is followed by an `endFoo` event. There's a few exceptions
+/// documented below.
+///
+/// Events starting with `handle` are used when isn't possible to have a begin
+/// event.   …õ…ş    p††  ††$   †/#†4  †C†J   †V_†[  †h	†m  †s†z  †…†Œ   †¹€ğ‡8u/// Called after the parser has consumed a sequence of patternFields that
+/// forms the arguments to an objectPattern ‡R	‡W  ‡]‡d  ‡o‡v   ‡­€š‡ê5/// Handle async modifiers `async`, `async*`, `sync`. ‡şˆ  ˆˆ   ˆKtˆ›H/// Ended by either [endAwaitExpression] or [endInvalidAwaitExpression]. ˆ°ˆ·   ˆÃ€¹‰!T/// One of the two possible corresponding end events for
+/// [beginAwaitExpression]. ‰4‰;  ‰F‰M   ‰€€å‰ŞT/// One of the two possible corresponding end events for
+/// [beginAwaitExpression]. ‰ÿŠ  ŠŠ  Š!Š.   Ši4Šn  ŠyŠ€  Š†Š‘   Š¡sŠ¦  Š¶	Š»  ŠÁŠÈ  ŠÓŠÚ  ŠãŠî   ‹€Å‹³€/// Called to handle a block that has been parsed but is not associated
+/// with any top level function declaration. Substructures:
+/// - block ‹Î‹Õ   ‹á!‹æ  ‹ó‹ú   Œ0Œ    Œ:.Œ?  ŒSŒZ   ŒliŒq  ŒƒŒŠ  Œ–Œ  Œ£Œª   ŒÙ€ò…€ /// Handle the start of the body of a class, mixin or extension declaration
+/// beginning at [token]. The actual kind of declaration is indicated by
+/// [kind]. ¦·  ¼Ã   Ï~¬€Ï/// Handle the end of the body of a class, mixin or extension declaration.
+/// The only substructures are the class, mixin or extension members.
+///
+/// The actual kind of declaration is indicated by [kind]. Òã  èí  ù      Q‡™2/// Called before parsing a class declaration, mixin declaration, or named
+/// mixin application.
+///
+/// At this point only the `class` or `mixin` keyword have been seen,
+/// so we know a declaration is coming but not its name or type
+/// parameter declarations.
+///
+/// Ended by [endTopLevelDeclaration]. ÉĞ   Ü‚'‘ô/// Handle the beginning of a class declaration.
+/// [begin] may be the same as [name], or may point to modifiers
+/// (or extraneous modifiers in the case of recovery) preceding [name].
+///
+/// At this point we have parsed the name and type parameter declarations. 
+’’  ’$’,  ’@’H  ’Y’a  ’s’{  ’‹’“  ’¨’°  ’Á’É  ’Ü’ä  ’õ
+’ü   “‚”-/// Handle an extends clause in a class declaration. Substructures:
+/// - supertype (may be a mixin application)
+/// The typeCount is for error recovery: Invalid code might have more than one
+/// class specified in the extends clause. A parser error has already been
+/// issued. ”@”H  ”W”\   ”€Ş•
+q/// Handle an implements clause in a class, mixin or enum declaration.
+/// Substructures:
+/// - implemented types ••#  •5•:   •oQ–W€Ğ/// Handle the header of a class declaration.  Substructures:
+/// - metadata
+/// - modifiers
+/// - class name
+/// - type variables
+/// - supertype
+/// - with clause
+/// - implemented types
+/// - native clause –i–p  –v–}  –Š–’   –ÄÓ˜-S/// Handle recovery associated with a class or extension type header.
+/// This may be called multiple times after [handleClassHeader]
+/// to recover information about the previous class header.
+/// The substructures are a subset of
+/// and in the same order as [handleClassHeader]:
+/// - supertype
+/// - with clause
+/// - implemented types ˜L˜c   ˜›€Ç™^/// Handle the end of a class declaration.  Substructures:
+/// - class header
+/// - class body ™™   ™+™2   ™f€¯™0/// Handle the beginning of a mixin declaration. ™´™»  ™Æ™Î  ™á™é  ™ó™ú  š
+š   š€­šyV/// Handle an on clause in a mixin declaration. Substructures:
+/// - implemented types š‡š  š™š   šÊ€ó›u€™/// Handle the header of a mixin declaration.  Substructures:
+/// - metadata
+/// - mixin name
+/// - type variables
+/// - on types
+/// - implemented types ›‡›   ›ÁÕRy/// Handle recovery associated with a mixin header.
+/// This may be called multiple times after [handleMixinHeader]
+/// to recover information about the previous mixin header.
+/// For otherwise legal input the substructures are a subset of
+/// and in the same order as [handleMixinHeader]
+/// - on types
+/// - implemented types
+/// but also covers the illegal
+/// - with clause   š€Ğg/// Handle the end of a mixin declaration.  Substructures:
+/// - mixin header
+/// - class or mixin body !(  3:   n€§àf/// Begins a not-further-categorized top-level declaration.
+///
+/// Ended by [endTopLevelDeclaration]. ŸŸ   Ÿq O"/// Handle the beginning of an extension methods declaration.  Substructures:
+/// - metadata
+///
+/// At this point only the `extension` keyword have been seen, so we know a
+/// declaration is coming but not its name or type parameter declarations.
+///
+/// Ended by [endTopLevelDeclaration].  p w     ¡M€±/// Handle the beginning of an extension methods declaration.  Substructures:
+/// - type variables
+///
+/// At this point we have parsed the name and type parameter declarations. ¡g¡n  ¡¡‡   ¡’7¢5€•/// Handle the end of an extension methods declaration.  Substructures:
+/// - substructures from [beginExtensionDeclaration]
+/// - on type
+/// - body ¢M¢T  ¢_¢f  ¢}¢„  ¢¢•   ¢Í £‰€®/// Handle the beginning of an extension type declaration.  Substructures:
+/// - type variables
+///
+/// At this point we have parsed the name and type parameter declarations. £§£®  £¿
+£Æ   £Ñs¤¦€Å/// Handle the end of an extension methods declaration.  Substructures:
+/// - substructures from [beginExtensionTypeDeclaration]
+/// - primary constructor formals
+/// - implements clause
+/// - body ¤Â¤É  ¤Ô¤Û  ¤ò¤ù  ¥¥   ¥H€Ô¥Éw/// Handle the start of a primary constructor declaration, currently only
+/// occurring in extension type declarations. ¥á¥è   ¦ ß§yA/// Handle the end of a primary constructor declaration, currently only
+/// occurring in extension type declarations. [constKeyword] is the 'const'
+/// keyword, if present, in
+///
+///   extension type const ExtensionType() {}
+///
+/// Substructures:
+/// - constructor name (if [hasConstructorName] is `true`)
+/// - formals §–§  §¨§°  §½§Ã   ¨€Ã¨‡z/// Handle the omission of a primary constructor declaration. Currently only
+/// occurring in extension type declarations. ¨¢¨©  ¨¯¨·   ¨Ê%¨Ï  ¨à¨ç   ¨óA¨ø  ©	©   ©8)©=  ©R©Y   ©e<ªˆ/// This method exists for analyzer compatibility only
+/// and will be removed once analyzer/fasta integration is complete.
+///
+/// This is called when [parseDirectives] has parsed all directives
+/// and is skipping the remainder of the file.  Substructures:
+/// - metadata   ª¥Vªª  ª½	ªÂ  ªÈªÏ   ªÿ&«  ««   «)E«.  «>«E   «r.«w  «‘«˜   «¤€½«©  «Á«È  «Î«Ö  «í«ô  «ı7¬   ¬e*¬j  ¬€¬‡   ¬“|¬˜  ¬³¬º  ¬Ä¬Ë  ¬Ø¬ß   ­.­  ­2­9   ­EU­J  ­b­i   ­,­£  ­»­Â   ­ÎQ­Ó  ­é­ğ   ®#$®(  ®2®9   ®K€õ®Ài/// Handle the end of an enum declaration.  Substructures:
+/// - [memberCount] times:
+///   - Enum member ®È®Ï  ®Ú®á  ®í®ô  ¯¯	  ¯¯   ¯D‚)°T€ø/// Handle the end of an enum constructor declaration.  Substructures:
+/// - metadata
+/// - return type
+/// - method name (identifier, possibly qualified)
+/// - type variables
+/// - formal parameters
+/// - initializers
+/// - async marker
+/// - body °g°o  °x°  °Š°‘  °¢°ª  °¼°Ã   ±q€Ë±Û^/// Handle the enum elements. Substructures:
+/// - [elementsCount] times:
+///   - Enum element ±î±õ  ²²   ²@²ú€¨/// Handle the header of an enum declaration.  Substructures:
+/// - Metadata
+/// - Enum name (identifier)
+/// - type variables
+/// - with clause
+/// - implemented types ³³  ³³%   ³T€ª³¸X/// Handle the enum element. Substructures:
+/// - Metadata
+/// - Enum value (identifier) ³Ê³Ñ   ´€Ÿ´  ´#´*  ´5´<  ´K´R   ´¥ ´ª  ´¶´½   ´É€ÙµU|/// Handle the end of an export directive.  Substructures:
+/// - metadata
+/// - uri
+/// - conditional uris
+/// - combinators µ_µf  µtµ{   µ¦%¶g€µ/// Called by [Parser] after parsing an extraneous expression as error
+/// recovery. For a stack-based listener, the suggested action is to discard
+/// an expression from the stack. ¶‚¶‰  ¶¶˜   ¶ÏV¶Ô  ¶î¶õ   ·)€ö·¦s/// Note that this is ended by [endClassFactoryMethod],
+/// [endMixinFactoryMethod] or [endExtensionFactoryMethod]. ·¹·Ê  ·Ú·á  ·ô·ü  ¸
+¸   ¸#€ƒ¸(  ¸E¸L  ¸W¸^  ¸m¸t   ¸ª€à¸¯  ¸Ì¸Ó  ¸Ş¸å  ¸ô¸û   ¹€ä¹“  ¹´¹»  ¹Æ¹Í  ¹Ü¹ã   ºv€èº{  º º§  º²º¹  ºÈºÏ   »b€…»g  »|»ƒ  »‰»•  »š»¢  »¶»¾  »Í»Õ   »ë)»ğ  ¼
+¼  ¼$¼,  ¼?¼G  ¼d¼k  ¼{¼ƒ  ¼š¼¢  ¼·¼Ì  ¼×¼ã   ½e½  ½6½=  ½C½O   ½;½†  ½œ½£  ½©½µ   ½À€…½Å  ½à	½å  ½ë½ò  ½ı¾  ¾¾   ¾Iö¿€¶/// Handle the end of a class field declaration.  Substructures:
+/// - Metadata
+/// - Modifiers
+/// - Type
+/// - Variable declarations (count times)
+///
+/// Started by [beginFields]. 
+¿)¿1  ¿E¿M  ¿`¿h  ¿|¿„  ¿–¿  ¿³¿»  ¿Ë¿Ó  ¿é	¿î  ¿úÀ @  À @À @   À @CƒÀ A€¶/// Handle the end of a mixin field declaration.  Substructures:
+/// - Metadata
+/// - Modifiers
+/// - Type
+/// - Variable declarations (count times)
+///
+/// Started by [beginFields]. 
+À A#À A+  À A?À AG  À AZÀ Ab  À AvÀ A~  À AÀ A˜  À A­À Aµ  À AÅÀ AÍ  À Aã	À Aè  À AôÀ Aû  À BÀ B   À CLƒÀ D€º/// Handle the end of a extension field declaration.  Substructures:
+/// - Metadata
+/// - Modifiers
+/// - Type
+/// - Variable declarations (count times)
+///
+/// Started by [beginFields]. 
+À D4À D<  À DPÀ DX  À DkÀ Ds  À D‡À D  À D¡À D©  À D¾À DÆ  À DÖÀ DŞ  À Dô	À Dù  À EÀ E  À EÀ E$   À F]ƒÀ G0€¿/// Handle the end of a extension type field declaration.  Substructures:
+/// - Metadata
+/// - Modifiers
+/// - Type
+/// - Variable declarations (count times)
+///
+/// Started by [beginFields]. 
+À GNÀ GV  À GjÀ Gr  À G…À G  À G¡À G©  À G»À GÃ  À GØÀ Gà  À GğÀ Gø  À H	À H  À HÀ H&  À H7À H>   À Iw‚ÄÀ JA€¶/// Handle the end of an enum field declaration.  Substructures:
+/// - Metadata
+/// - Modifiers
+/// - Type
+/// - Variable declarations (count times)
+///
+/// Started by [beginFields]. 
+À JVÀ J^  À JrÀ Jz  À JÀ J•  À J©À J±  À JÃÀ JË  À JàÀ Jè  À JøÀ K   À K	À K  À K'À K.  À K?À KF   À L?ßÀ MJ€ó/// Handle the end of an enum method declaration.  Substructures:
+/// - metadata
+/// - return type
+/// - method name (identifier, possibly qualified)
+/// - type variables
+/// - formal parameters
+/// - initializers
+/// - async marker
+/// - body À MXÀ M`  À MiÀ Mp  À M{À M‚  À M“À M›  À M­À M´   À N"€ÙÀ N˜l/// Marks that the grammar term `forInitializerStatement` has been parsed and
+/// it was an empty statement. À N»À NÂ   À Nÿ€ôÀ Ozq/// Marks that the grammar term `forInitializerStatement` has been parsed and
+/// it was an expression statement. À O¢À O©  À O¯
+À Oµ   À O÷CÀ P·€´/// Marks that the grammar term `forInitializerStatement` has been parsed and
+/// it was a `localVariableDeclaration` of the form
+/// `metadata initializedVariableDeclaration ';'`. À PäÀ Pë  À Pñ
+À P÷   À Q>RÀ Qú€°/// Marks that the grammar term `forInitializerStatement` has been parsed and
+/// it was a `localVariableDeclaration` of the form
+/// `metadata patternVariableDeclaration ';'`. À R/À R6  À R>À RE   À R”€À Sd/// Marks the start of a for statement which is ended by either
+/// [endForStatement] or [endForIn]. À SÀ S   À S'FÀ Sÿ€Ì/// Marks the end of parsing the control structure of a for statement
+/// or for control flow entry up to and including the closing parenthesis.
+/// `for` `(` initialization `;` condition `;` updaters `)` À TÀ T  À T$À T+  À T;À TB  À TPÀ TU   À TqHÀ Tv  À T†À T   À T½*À TÂ  À TØÀ Tß   À TëMÀ Tğ  À UÀ U   À U<‚7À Vô¤/// Marks the end of parsing the control structure of a for-in statement
+/// or for control flow entry up to and including the closing parenthesis.
+/// If [patternKeyword] is `null`, this takes the form:
+///   `for` `(` (type)? identifier `in` iterator `)`
+/// If [patternKeyword] is not `null`, it is either a `var` or `final` token,
+/// and this takes the form:
+///   `for` `(` patternKeyword pattern `in` iterator `)` À W	À W  À WÀ W#  À W2À W9  À WIÀ WQ  À W`À Wg   À WÆ:À WË  À WÔÀ WÛ   À X)À X	  À XÀ X%   À X1KÀ X6  À XIÀ XP   À X€#À X…  À X”À X›   À X§?À X¬  À X¹À XÀ   À Xê“À ZQS/// Handle the beginning of a named function expression which isn't legal
+/// syntax in Dart.  Useful for recovering from JavaScript code being pasted
+/// into a Dart program, as it will interpret `function foo() {}` as a named
+/// function expression with return type `function` and name `foo`.
+///
+/// Substructures:
+/// - Type variables À ZnÀ Zu   À Z‚IÀ \qÎ/// A named function expression which isn't legal syntax in Dart.
+/// Useful for recovering from JavaScript code being pasted into a Dart
+/// program, as it will interpret `function foo() {}` as a named function
+/// expression with return type `function` and name `foo`.
+///
+/// Substructures:
+/// - Type variables
+/// - Modifiers
+/// - Return type
+/// - Name
+/// - Formals
+/// - Initializers
+/// - Async modifier
+/// - Function body (block or arrow expression). À \ŒÀ \“   À \Î€¦À ]Gm/// Handle the beginning of a local function declaration.  Substructures:
+/// - Metadata
+/// - Type variables À ]eÀ ]l   À ]xcÀ ^…€ï/// A function declaration.
+///
+/// Substructures:
+/// - Metadata
+/// - Type variables
+/// - Return type
+/// - Name
+/// - Type variables
+/// - Formals
+/// - Initializers
+/// - Async modifier
+/// - Function body (block or arrow expression). À ^¡À ^¨   À ^ß;À _ô/// This method is invoked when the parser sees that a function has a
+/// block function body.  This method is not invoked for empty or expression
+/// function bodies, see the corresponding methods [handleEmptyFunctionBody]
+/// and [handleExpressionFunctionBody]. À `À `   À `‚À aÑ¡/// This method is invoked by the parser after it finished parsing a block
+/// function body.  This method is not invoked for empty or expression
+/// function bodies, see the corresponding methods [handleEmptyFunctionBody]
+/// and [handleExpressionFunctionBody].  The [beginToken] is the '{' token,
+/// and the [endToken] is the '}' token of the block.  The number of
+/// statements is given as the [count] parameter. À aæ	À aë  À añÀ aø  À bÀ b
+   À b?LÀ bD  À bYÀ b`   À bÀ cT€·/// Handle the end of a function body that was skipped by the parser.
+///
+/// The boolean [isExpressionBody] indicates whether the function body that
+/// was skipped used "=>" syntax. À cnÀ cu  À c{À c   À c˜&À c  À c¯À c¶   À cÂWÀ cÇ  À c×À cŞ  À céÀ cğ   À d!À d"  À d/À d6   À dB‚À eõ‘/// Handle the end of a typedef declaration.
+///
+/// If [equals] is null, then we have the following substructures:
+/// - Metadata
+/// - Return type
+/// - Name (identifier)
+/// - Alias type variables
+/// - Formal parameters
+///
+/// If [equals] is not null, then the have the following substructures:
+/// - Metadata
+/// - Name (identifier)
+/// - Alias type variables
+/// - Type (FunctionTypeAnnotation) À f À f  À fÀ f  À f%À f,   À fa€ÈÀ fÚm/// Handle the end of a class with clause (e.g. "with B, C").
+/// Substructures:
+/// - mixin types (TypeList) À fğÀ f÷   À g-xÀ gc./// Handle the absence of a class with clause.   À g©IÀ h¥€ê/// Handle the end of an enum with clause (e.g. "with B, C").
+/// Substructures:
+/// - mixin types (TypeList)
+///
+/// This method is separated from [handleClassWithClause] to simplify
+/// handling the different objects in the context. À hºÀ hÁ   À hövÀ i,./// Handle the absence of an enum with clause.   À ipDÀ je€ã/// Handle the end of a mixin with clause (e.g. "with B, C").
+/// Substructures:
+/// - mixin types (TypeList)
+///
+/// This method is separated from [handleClassWithClause] and
+/// [handleEnumWithClause] as it is an error state. À j{À j‚   À j¸‚<À kÛ/// Handle the beginning of a named mixin application.
+/// [beginToken] may be the same as [name], or may point to modifiers
+/// (or extraneous modifiers in the case of recovery) preceding [name].
+///
+/// At this point we have parsed the name and type parameter declarations. 
+À kıÀ l  À lÀ l  À l1À l9  À lJÀ lR  À ldÀ ll  À l|À l„  À l™À l¡  À l²À lº  À lÍÀ lÕ  À læ
+À lí   À løÀ mŒ€†/// Handle a named mixin application with clause (e.g. "A with B, C").
+/// Substructures:
+/// - supertype
+/// - mixin types (TypeList) À m²À m¹   À mÿ‚¯À p
+ë/// Handle the end of a named mixin declaration.  Substructures:
+/// - metadata
+/// - modifiers
+/// - class name
+/// - type variables
+/// - supertype
+/// - with clause
+/// - implemented types (TypeList)
+///
+/// TODO(paulberry,ahe): it seems inconsistent that for a named mixin
+/// application, the implemented types are a TypeList, whereas for a class
+/// declaration, each implemented type is listed separately on the stack, and
+/// the number of implemented types is passed as a parameter. À p#À p*  À p0À p7  À pDÀ pK  À pXÀ p`  À prÀ py   À p²$À p·  À pÁÀ pÈ   À pÚ€À qB^/// Handle the end of a "hide" combinator.  Substructures:
+/// - hidden names (IdentifierList) À qJÀ qQ   À q|JÀ q  À q–	À q›   À qÊ"À qÏ  À qİÀ qä   À qğ;À qõ  À r	À r   À r/%À r4  À rEÀ rL   À rXWÀ r]  À rlÀ rs  À r{À rƒ   À r³'À r¸  À rËÀ rÒ   À rŞGÀ rã  À rôÀ rû   À s)'À s.  À sAÀ sH   À sTGÀ sY  À sjÀ sq   À sŸ(À s¤  À s°À s·   À sËRÀ t½€ä/// Signals that the current import is deferred and/or has a prefix
+/// depending upon whether [deferredKeyword] and [asKeyword]
+/// are not `null` respectively. Substructures:
+/// - prefix identifier (only if asKeyword != null) À tĞÀ tØ  À tèÀ tğ   À u!	À uÇ€”/// Handle the end of an import directive.  Substructures:
+/// - metadata
+/// - uri
+/// - conditional uris
+/// - prefix identifier
+/// - combinators À uÑÀ uØ  À uæÀ uî  À uûÀ v   À v.œÀ w=/// Handle recovery associated with an import directive.
+/// This may be called multiple times after [endImport]
+/// to recover information about the previous import directive.
+/// The substructures are a subset of and in the same order as [endImport]:
+/// - conditional uris
+/// - prefix identifier
+/// - combinators À w“À w›   À wÎ)À wÓ  À wèÀ wï   À wûIÀ x   À x	À x   À xH,À xM  À xaÀ xh   À xx&À y3€­/// Handle the end of a conditional URI construct.  Substructures:
+/// - Dotted name
+/// - Condition (literal string; only if [equalSign] != null)
+/// - URI (literal string) À yEÀ yL  À yVÀ y]  À ygÀ yo   À y¢YÀ y§  À y¸	À y½  À yÃÀ yÊ   À yÿ4À z  À z$À z+   À z7yÀ z<  À zZÀ za  À zgÀ zn   À z´/À z¹  À zÔÀ zÛ   À zç[À zì  À {À {   À {F*À {K  À {aÀ {h   À {t€»À {ÕW/// Handle the end of a field initializer.  Substructures:
+/// - Initializer expression À {éÀ {ğ  À {ûÀ |   À |3€‚À |f+/// Handle the lack of a field initializer. À |À |†   À |¹-À |¾  À |×À |Ş   À |ê€¿À }NZ/// Handle the end of a variable initializer. Substructures:
+/// - Initializer expression. À }eÀ }l   À }­€‰À }á,/// Used when a variable has no initializer. À }ıÀ ~   À ~:%À ~?  À ~PÀ ~W   À ~cNÀ ~h  À ~wÀ ~~   À ~µ&À ~º  À ~ÌÀ ~Ó   À ~ßeÀ ~ä  À ~ô	À ~ù  À ~ÿÀ   À À    À HAÀ M    À À €R€¹/// Called after the listener has recovered from an invalid expression. The
+/// parser will resume parsing from [token]. Exactly where the parser will
+/// resume parsing is unspecified. À €jÀ €q   À €£'À y€Ê/// Called after the listener has recovered from an invalid function
+/// body. The parser expected an open curly brace `{` and will resume parsing
+/// from [token] as if a function body had preceded it. À “À š   À Î À ‚{€¡/// Called after the listener has recovered from an invalid type. The parser
+/// expected an identifier, and will resume parsing type arguments from
+/// [token]. À ‚–À ‚   À ‚Ò:À ‚×  À ‚ãÀ ‚ê   À ƒ:À ƒ  À ƒ+À ƒ2  À ƒ8À ƒ=   À ƒNPÀ ƒS  À ƒgÀ ƒl   À ƒ¢LÀ ƒ§  À ƒÀÀ ƒÇ  À ƒÖÀ ƒİ   À ƒò€ñÀ „^`/// Handle the end of a library augmentation directive.  Substructures:
+/// - metadata
+/// - uri À „|À „ƒ  À „’À „™  À „¨À „¯   À „ç%À „ì  À „ıÀ …   À …€çÀ …‘u/// Handle the end of a library directive.  Substructures:
+/// - Metadata
+/// - Library name (a qualified identifier) À … À …§  À …¶À …½  À …ÇÀ …Í   À …û^À †   À †À †  À †#À †*   À †]€×À †Ût/// Called after the parser has consumed a mapPatternEntry, consisting of an
+/// expression, a colon, and a pattern. À †ñÀ †ø  À †şÀ ‡   À ‡8'À ‡=  À ‡PÀ ‡W   À ‡cMÀ ‡h  À ‡†À ‡  À ‡™À ‡¡   À ‡´bÀ ‡¹  À ‡ÊÀ ‡Ï  À ‡âÀ ‡é   À ˆmÀ ˆ  À ˆ9À ˆ@  À ˆKÀ ˆP   À ˆ‹À ‰Š€ñ/// Called for class-like members (class, mixin, extension), but each member
+/// should also have a more specific begin/end pair, e.g.
+/// [beginFactoryMethod]/[endClassFactoryMethod]/[endMixinFactoryMethod]/
+/// [endExtensionFactoryMethod].   À ‰€™À ‰ïG/// Handle an invalid member declaration. Substructures:
+/// - metadata À ŠÀ Š
+   À Š;ÎÀ ‹à/// This event is added for convenience to the listener.
+/// Members will actually be begin/end'ed by more specific
+/// events as well.
+/// Normally listeners should probably override
+/// [endClassFields], [endMixinFields], [endExtensionFields],
+/// [endClassMethod], [endMixinMethod], [endExtensionMethod],
+/// [endClassConstructor], [endMixinConstructor],
+/// or [endExtensionConstructor] instead.   À Œ‚À &	/// Handle the beginning of a class-like method declaration.  Substructures:
+/// - metadata
+/// Note that this is ended with [endClassConstructor], [endClassMethod],
+/// [endExtensionConstructor], [endExtensionMethod], [endMixinConstructor] or
+/// [endMixinMethod]. À 9À J  À `À h  À {À ƒ  À —À Ÿ  À ±À ¹  À ÎÀ Ö  À ìÀ ô  À 
+À 
+   À ¡À  €ó/// Handle the end of a class method declaration.  Substructures:
+/// - metadata
+/// - return type
+/// - method name (identifier, possibly qualified)
+/// - type variables
+/// - formal parameters
+/// - initializers
+/// - async marker
+/// - body À /À 7  À @À G  À RÀ Y  À jÀ r  À „À ‹   À º‚ À Å€ó/// Handle the end of a mixin method declaration.  Substructures:
+/// - metadata
+/// - return type
+/// - method name (identifier, possibly qualified)
+/// - type variables
+/// - formal parameters
+/// - initializers
+/// - async marker
+/// - body À ÔÀ Ü  À åÀ ì  À ÷À ş  À ‘À ‘  À ‘)À ‘0   À ‘Ş‚(À ’í€÷/// Handle the end of a extension method declaration.  Substructures:
+/// - metadata
+/// - return type
+/// - method name (identifier, possibly qualified)
+/// - type variables
+/// - formal parameters
+/// - initializers
+/// - async marker
+/// - body À “ À “  À “À “  À “#À “*  À “;À “C  À “UÀ “\   À ”
+‚1À •€ü/// Handle the end of a extension type method declaration.  Substructures:
+/// - metadata
+/// - return type
+/// - method name (identifier, possibly qualified)
+/// - type variables
+/// - formal parameters
+/// - initializers
+/// - async marker
+/// - body À •5À •=  À •FÀ •M  À •^À •e  À •pÀ •x  À •ŠÀ •‘   À –?‚*À —O€ø/// Handle the end of a class constructor declaration.  Substructures:
+/// - metadata
+/// - return type
+/// - method name (identifier, possibly qualified)
+/// - type variables
+/// - formal parameters
+/// - initializers
+/// - async marker
+/// - body À —cÀ —k  À —tÀ —{  À —†À —  À —À —¦  À —¸À —¿   À ˜m‚*À ™}€ø/// Handle the end of a mixin constructor declaration.  Substructures:
+/// - metadata
+/// - return type
+/// - method name (identifier, possibly qualified)
+/// - type variables
+/// - formal parameters
+/// - initializers
+/// - async marker
+/// - body À ™‘À ™™  À ™¢À ™©  À ™´À ™»  À ™ÌÀ ™Ô  À ™æÀ ™í   À š›‚2À ›¯€ü/// Handle the end of a extension constructor declaration.  Substructures:
+/// - metadata
+/// - return type
+/// - method name (identifier, possibly qualified)
+/// - type variables
+/// - formal parameters
+/// - initializers
+/// - async marker
+/// - body À ›ÇÀ ›Ï  À ›ØÀ ›ß  À ›ğÀ ›÷  À œÀ œ
+  À œÀ œ#   À œÑ‚FÀ ğ/// Handle the end of an extension type constructor declaration.
+/// Substructures:
+/// - metadata
+/// - return type
+/// - method name (identifier, possibly qualified)
+/// - type variables
+/// - formal parameters
+/// - initializers
+/// - async marker
+/// - body À À   À À $  À 5À <  À GÀ O  À aÀ h   À Ÿ&À Ÿ   À Ÿ2À Ÿ9   À ŸECÀ ŸJ  À ŸZ	À Ÿ_   À ŸŒ"À Ÿ‘  À ŸŸÀ Ÿ¦   À Ÿ²*À  v€´/// Handle the end of a metadata annotation.  Substructures:
+/// - Identifier
+/// - Type arguments
+/// - Constructor name (only if [periodBeforeName] is not `null`)
+/// - Arguments À  ‚À  ‰  À  ”À  œ  À  ­À  ´   À  à2À  å  À ¡À ¡
+   À ¡€„À ¡  À ¡>	À ¡C  À ¡IÀ ¡P  À ¡[À ¡b   À ¡À ¡£  À ¡­À ¡´   À ¡À€£À ¢P/// Handle the end of a part directive.  Substructures:
+/// - metadata
+/// - uri À ¢$À ¢+  À ¢7À ¢>   À ¢g À ¢l  À ¢xÀ ¢   À ¢‹XÀ £r€Õ/// Handle the end of a "part of" directive.  Substructures:
+/// - Metadata
+/// - Library name (a qualified identifier)
+///
+/// If [hasName] is true, this part refers to its library by name, otherwise,
+/// by URI. À £ƒÀ £Š  À £–À £  À £§À £®  À £¸À £¾   À £ç0À £ì  À ¤À ¤   À ¤nÀ ¤   À ¤:À ¤A  À ¤LÀ ¤S   À ¤)À ¤’  À ¤§À ¤®   À ¤º€ÚÀ ¥.j/// Handle the end of a `native` function.
+/// The [handleNativeClause] event is sent prior to this event. À ¥GÀ ¥N  À ¥ZÀ ¥a   À ¥˜aÀ ¦…€ß/// Called after the [handleNativeClause] event when the parser determines
+/// that the native clause should be discarded / ignored.
+/// For example, this method is called a native clause is followed by
+/// a function body. À ¦¥À ¦¬  À ¦¸À ¦¿   À ¦ıÀ §€‰/// Handle the end of a `native` function that was skipped by the parser.
+/// The [handleNativeClause] event is sent prior to this event. À §°À §·  À §ÃÀ §Ê   À ¨€—À ¨N>/// This method is invoked when a function has the empty body. À ¨fÀ ¨m   À ¨£€ğÀ ©&y/// This method is invoked when parser finishes parsing the corresponding
+/// expression of the expression function body. À ©CÀ ©J  À ©UÀ ©]   À ©—{À ©œ  À ©¶À ©¼  À ©ÊÀ ©Ñ  À ©ÜÀ ©ã   À ªMÀ ª  À ª&À ª-  À ª8À ª?   À ªg$À ªl  À ªvÀ ª}   À ª€À ªö]/// Handle the end of a "show" combinator.  Substructures:
+/// - shown names (IdentifierList) À ªşÀ «   À «0)À «5  À «JÀ «Q   À «]cÀ «b  À «uÀ «|  À «ŠÀ «‘   À «Ä*À «É  À «ßÀ «æ   À «òeÀ «÷  À ¬À ¬  À ¬ À ¬'   À ¬[%À ¬`  À ¬qÀ ¬x   À ¬„gÀ ¬‰  À ¬˜À ¬  À ¬§À ¬®  À ¬¹À ¬À   À ¬ï/À ¬ô  À ­À ­   À ­"€‚À ­'  À ­GÀ ­L  À ­VÀ ­]  À ­hÀ ­o   À ­¨'À ­­  À ­ÀÀ ­Ç   À ­Ó`À ­Ø  À ­éÀ ­ğ  À ­úÀ ­ÿ   À ®7cÀ ®<  À ®RÀ ®Y  À ®dÀ ®k   À ®*À ®£  À ®¹À ®À   À ®ÌdÀ ®Ñ  À ®åÀ ®ì  À ®ùÀ ¯    À ¯4ƒ&À ²‚²/// This event is added for convenience for the listener.
+/// All top-level declarations will actually be begin/end'ed by more specific
+/// events as well, e.g. [beginClassDeclaration]/[endClassDeclaration],
+/// [beginEnum]/[endEnum] etc.
+///
+/// Normally listeners should probably override
+/// [endClassDeclaration], [endNamedMixinApplication], [endEnum],
+/// [endTypedef], [endLibraryName], [endImport], [endExport],
+/// [endPart], [endPartOf], [endTopLevelFields], or [endTopLevelMethod]
+/// instead.
+///
+/// Started by one of [beginExtensionDeclarationPrelude],
+/// [beginClassOrMixinOrNamedMixinApplicationPrelude], [beginTopLevelMember]
+/// or [beginUncategorizedTopLevelDeclaration]. À ²À ²&   À ²^–À ³’ /// Called by the [Parser] when it recovers from an invalid top level
+/// declaration, where [endToken] is the last token in the declaration
+/// This is called after the begin/end metadata star events,
+/// and is followed by [endTopLevelDeclaration].
+///
+/// Substructures:
+/// - metadata À ³³À ³º   À ³ø€ÙÀ ´®€¨/// Marks the beginning of a top level field or method declaration.
+/// See also [endTopLevelFields] and [endTopLevelMethod].
+///
+/// Ended by [endTopLevelDeclaration]. À ´ÂÀ ´É   À ´ÕÂÀ µ‡€¦/// Marks the beginning of a fields declaration.
+/// Note that this is ended with [endTopLevelFields], [endClassFields],
+/// [endMixinFields] or [endExtensionFields]. 	À µšÀ µ«  À µÁÀ µÉ  À µİÀ µå  À µøÀ ¶   À ¶À ¶  À ¶.À ¶6  À ¶KÀ ¶S  À ¶cÀ ¶k  À ¶À ¶ˆ   À ¶›ôÀ ·€Ş/// Handle the end of a top level variable declaration.  Substructures:
+/// - Metadata
+/// - Type
+/// - Repeated [count] times:
+///   - Variable name (identifier)
+///   - Field initializer
+///
+/// Started by [beginFields]. À ·¨À ·°  À ·ÄÀ ·Ì  À ·ŞÀ ·æ  À ·ûÀ ¸  À ¸À ¸  À ¸1	À ¸6  À ¸BÀ ¸I  À ¸ZÀ ¸a   À ¸“aÀ ¸˜  À ¸³À ¸º  À ¸ÇÀ ¸Ï  À ¸ÜÀ ¸ä   À ¸øHÀ ¹Ö€Æ/// Handle the end of a top level method.  Substructures:
+/// - metadata
+/// - modifiers
+/// - return type
+/// - identifier
+/// - type variables
+/// - formal parameters
+/// - async marker
+/// - body À ¹èÀ ¹ï  À ¹úÀ º  À ºÀ º   À ºD&À ºI  À º[À ºb   À ºn%À ºs  À º„À º‹   À º—CÀ ºœ  À º«À º²   À ºŞlÀ ºã  À ºôÀ ºü  À »À »  À »À »#   À »NQÀ »S  À »fÀ »m   À »£xÀ »¨  À »¿À »Ä  À »ÏÀ »Ö  À »áÀ »é   À ¼RÀ ¼$  À ¼/À ¼6  À ¼AÀ ¼I   À ¼u€ÄÀ ¼áb/// Called when parser encounters a '!'
+/// used as a non-null postfix assertion in an expression. À ¼ÿ
+À ½   À ½=€ÍÀ ½¾w/// Called after the parser has consumed a null-assert pattern, consisting of
+/// a pattern followed by a `!` operator. À ½Ö
+À ½İ   À ¾€ÎÀ ¾v/// Called after the parser has consumed a null-check pattern, consisting of a
+/// pattern followed by a `?` operator. À ¾¥À ¾¬   À ¾à¾À ÀBP/// Called after the parser has consumed an assigned variable pattern,
+/// consisting of a variable name identifier (other than `_`).
+///
+/// This method will only be called for a variable pattern that is part of a
+/// `patternAssignment` (and hence should refer to a previously declared
+/// variable rather than declaring a fresh one). À À`À Àg   À À¢‚ÃÀ ÂÎ‚/// Called after the parser has consumed a declared variable pattern,
+/// consisting of an optional `var` or `final` keyword, an optional type
+/// annotation, and a variable name identifier (other than `_`).
+///
+/// The flag [inAssignmentPattern] indicates whether this variable pattern is
+/// part of a `patternAssignment`.  If this is `true`, it indicates that the
+/// parser has recovered from an error (since declared variable patterns are
+/// not allowed inside a `patternAssignment`).  The error has already been
+/// reported. À ÂìÀ Âô  À ÂüÀ Ã  À Ã!À Ã"   À ÃiÀ Ä"€­/// Called after the parser has consumed a wildcard pattern, consisting of an
+/// optional `var` or `final` keyword, an optional type annotation, and the
+/// identifier `_`. À Ä8À Ä@  À ÄHÀ ÄO   À Ä‚<À Ä‡  À Ä”À Ä›   À ÄÂ*À ÄÇ  À Ä×À ÄŞ   À ÄğÃÀ Æ5-/// Handle the end of a record type declaration.
+///
+/// Substructures:
+/// - RecordTypeEntry*
+/// - RecordTypeNamedFields?
+///
+/// Notice that [count] is:
+/// - the number of RecordTypeEntries if [hasNamedFields] is `false`, or
+/// - the number of RecordTypeEntries + 1 if [hasNamedFields] is `true`. À ÆJÀ ÆQ  À Æ]À Æe  À Ær	À Æw  À Æ}À Æƒ   À Æ·À Æ¼    À ÆÙ€½À Ç[p/// Handle the end of the record type entries.
+///
+/// Substructures:
+/// - metadata
+/// - type
+/// - identifier   À Çš5À ÇŸ  À ÇºÀ ÇÁ   À ÇÓ€ÒÀ ÈBa/// Handle the end of the record type named fields.
+///
+/// Substructures:
+/// - RecordTypeEntry* À È[	À È`  À ÈfÀ Èm   À È©+À È®  À ÈÀÀ ÈÇ   À ÈØ€ÿÀ Éz€/// Handle the end of a generic function type declaration.
+///
+/// Substructures:
+/// - Type variables
+/// - Return type
+/// - Formal parameters À ÉŠÀ É‘  À ÉŸÀ É§   À ÉÛ'À Éà  À ÉóÀ Éú   À ÊgÀ Ê  À Ê	À Ê!  À Ê'À Ê.  À Ê9À Ê@   À Êq€ÁÀ Êäi/// After endTypeArguments has been called,
+/// this event is called if those type arguments are invalid. À ÊÿÀ Ë   À Ë6NÀ Ë;  À ËQÀ ËX   À Ëˆ€®À Ì/// Handle the begin of a type formal parameter (e.g. "X extends Y").
+/// Substructures:
+/// - Metadata
+/// - Name (identifier) À Ì'À Ì.   À Ì:€ûÀ Í €º/// Called when [beginTypeVariable] has been called for all of the variables
+/// in a group, and before [endTypeVariable] has been called for any of the
+/// variables in that same group. À ÍÀ Í"  À Í(	À Í-   À Í9À Î]/// Handle the end of a type formal parameter (e.g. "X extends Y")
+/// where [index] is the index of the type variable in the list of
+/// type variables being declared.
+///
+/// Substructures:
+/// - Type bound
+///
+/// See [beginTypeVariable] for additional substructures. À ÎtÀ Î{  À Î	À Î†  À ÎŒÀ Î”  À Î£À Î«   À ÎÛ'À Îà  À ÎóÀ Îú   À Ï\À Ï  À ÏÀ Ï#  À Ï.À Ï5   À Ïf€¯À Ïk  À ÏŒÀ Ï”   À Ğ,À Ğ  À Ğ6À Ğ=   À ĞIÀ Ğù€/// Handle the end of a function expression (e.g. "() { ... }").
+/// Substructures:
+/// - Type variables
+/// - Formal parameters
+/// - Async marker
+/// - Body À ÑÀ Ñ  À Ñ!À Ñ(   À Ñ[€ÀÀ ÑÁZ/// Handle the start of a variables declaration.  Substructures:
+/// - Metadata
+/// - Type À ÑâÀ Ñé  À ÑïÀ Ñ÷  À ÒÀ Ò	   À ÒdÀ Ò$  À Ò<	À ÒA  À ÒGÀ ÒO   À Ò‡(À ÒŒ  À Ò À Ò§   À Ò³`À Ò¸  À ÒÊÀ ÒÑ  À ÒŞÀ Òå   À Ó+À Ó  À Ó0À Ó7   À ÓFLÀ ÓK  À Ó]À Ód   À Ó–GÀ Ó›  À Ó¬À Ó³   À Óá€ÇÀ Ôdy/// Called after the parser has consumed a cast pattern, consisting of a
+/// pattern, `as` operator, and type annotation. À ÔvÀ Ô}   À Ô¬XÀ Ô±  À ÔÌÀ ÔÓ   À Õ€İÀ ÕÀ€ª/// Called when the parser encounters a binary operator, in between the LHS
+/// and RHS subexpressions.
+///
+/// Not called when the binary operator is `.`, `?.`, or `..`. À ÕÖÀ Õİ   À ÕéMÀ Õî  À ÖÀ Ö	   À Ö:sÀ Ö‹I/// Called when the parser has consumed the operator of a binary pattern. À ÖÀ Ö¥   À Ö±€ĞÀ ×?€„/// Called when the parser has consumed a binary pattern, consisting of a LHS
+/// pattern, `&&` or `||` operator, and a RHS pattern. À ×PÀ ×W   À ×…€±À ×¯"/// Called for `.`, `?.` and `..`. À ×ÌÀ ×Ó   À Ø:€œÀ Ø©e/// Called when the parser encounters a `?` operator and begins parsing a
+/// conditional expression. À ØÄÀ ØË   À ØÚ€„À Ù9U/// Called when the parser encounters a `:` operator in a conditional
+/// expression.   À Ùb€²À Ù²H/// Called when the parser finishes processing a conditional expression. À ÙËÀ ÙÒ  À ÙÛÀ Ùâ   À Ú0À Ú  À Ú2À Ú9   À ÚLKÀ ÚQ  À ÚdÀ Úk   À Ú›OÀ Ú   À Ú³À Úº   À Úî€ÌÀ Û€‰/// Called before parsing a "for" control flow list, set, or map entry.
+/// Ended by either [endForControlFlow] or [endForInControlFlow]. À Û•À Û  À Û¨À Û¯   À Û¾€íÀ Üd€š/// Called after parsing a "for" control flow list, set, or map entry.
+/// One of the two possible corresponding end events for
+/// [beginForControlFlow]. À ÜvÀ Ü}   À Ü¯€ôÀ İX€/// Called after parsing a "for-in" control flow list, set, or map entry.
+/// One of the two possible corresponding end events for
+/// [beginForControlFlow]. À İlÀ İs   À İ§€·À Ş:€‰/// Called before parsing an `if` control flow list, set, or map entry.
+/// Ended by either [endIfControlFlow] or [endIfElseControlFlow]. À ŞMÀ ŞT   À Şb€À ŞÍa/// Called before parsing the `then` portion of an `if` control flow list,
+/// set, or map entry. À ŞãÀ Şê   À Şö€¸À ßaa/// Called before parsing the `else` portion of an `if` control flow list,
+/// set, or map entry. À ßwÀ ß~   À ß²4À à¡€İ/// Called after parsing an `if` control flow list, set, or map entry.
+/// Substructures:
+/// - if conditional expression
+/// - expression
+/// One of the two possible corresponding end events for
+/// [beginIfControlFlow]. À à²À à¹   À àê\À áù€û/// Called after parsing an if-else control flow list, set, or map entry.
+/// Substructures:
+/// - if conditional expression
+/// - then expression
+/// - else expression
+/// One of the two possible corresponding end events for
+/// [beginIfControlFlow]. À âÀ â   À âJ€úÀ âó€/// Called after parsing a list, set, or map entry that starts with
+/// one of the spread collection tokens `...` or `...?`.  Substructures:
+/// - expression À ã
+À ã   À ãH€şÀ ãç€“/// Called after parsing an element of a list or map pattern that starts with
+/// `...`.  Substructures:
+/// - pattern (if hasSubPattern is `true`) À ãù
+À ä   À äÀ ä   À äJ€šÀ ä³_/// Handle the start of a function typed formal parameter.  Substructures:
+/// - type variables À äÕÀ äÜ   À äè
+À å}€‡/// Handle the end of a function typed formal parameter.  Substructures:
+/// - type variables
+/// - return type
+/// - formal parameters À åÀ å¤  À å®À å¶   À åö€ÓÀ æom/// Handle an identifier token.
+///
+/// [context] indicates what kind of construct the identifier appears in. À æ€À æ‡  À æÀ æ    À æÍ€À æÒ  À æñÀ æù  À çÀ ç	  À çÀ ç"   À ça+À çf  À çzÀ ç   À çLÀ ç•  À ç§À ç®   À çàUÀ çå  À çöÀ çı  À è
+À è   À è9FÀ è>  À èPÀ èW   À èƒzÀ èˆ  À è¤À èª  À è´À è»  À èÈÀ èÏ   À é€ƒÀ é  À é%À é+  À é5À é<  À éLÀ éS   À éˆLÀ é  À é¢À é©   À éØ5À éİ  À ééÀ éğ  À éşÀ ê   À ê€”À ê  À ê À ê'  À ê5À ê=  À êBÀ êI  À ê_À êg  À êrÀ êy   À ê©€ÇÀ ë+z/** Called with either the token containing a double literal, or
+    * an immediately preceding "unary plus" token.
+    */ À ë?À ëF   À ët€ÃÀ ëø|/** Called with either the token containing an integer literal,
+    * or an immediately preceding "unary plus" token.
+    */ À ì	À ì   À ì;€‡À ì@  À ìY	À ì^  À ìdÀ ìk  À ìwÀ ì  À ìŒÀ ì“   À ìÆ€ôÀ íT€„/// Called after the parser has consumed a list pattern, consisting of a `[`,
+/// a comma-separated sequence of patterns, and a `]`. À íf	À ík  À íqÀ íx  À í„À í‹   À í¾WÀ íÃ  À íŞ	À íã  À ííÀ íô  À îÀ î
+  À îÀ î"  À îÙÀ îß   À ï€ôÀ ï­€Š/// Called after the parser has consumed a map pattern, consisting of a `{`,
+/// a comma-separated sequence of mapPatternEntry, and a `}`. À ï¾	À ïÃ  À ïÉÀ ïĞ  À ïÚÀ ïá   À ğFÀ ğ  À ğ(À ğ/   À ğ[\À ğ`  À ğsÀ ğz  À ğ†À ğŒ   À ğ»JÀ ğÀ  À ğÔÀ ğÛ   À ñ	€ÍÀ ñ’/// Called after the parser has consumed a patternField, consisting of an
+/// optional identifier, optional `:`, and a pattern. À ñ¥À ñ­   À ñÚPÀ ñß  À ñöÀ ñı   À ò.'À ò3  À òFÀ òM   À òYGÀ ò^  À òoÀ òv   À ò¤FÀ ò©  À ò»À òÂ   À òî€˜À òó  À ó.À ó5   À óŠpÀ ó  À ó¶À ó½   À óşCÀ ô  À ôÀ ô   À ôENÀ ôJ  À ô`À ôg   À ô—@À ôœ  À ô«À ô²   À ôÛ€¤À õ(E/// Invoked when a pattern switch case doesn't have the 'when' clause À õEÀ õL   À õƒfÀ õˆ  À õªÀ õ±   À õíDÀ õò  À öÀ ö
+   À ö5€£À ö~A/// Handle the end of a construct of the form "operator <token>". À ö‘À ö˜  À ö¨À ö¯   À öÜ€ãÀ ÷Wq/// Handle the end of a construct of the form "operator <token>"
+/// where <token> is not a valid operator token. À ÷qÀ ÷x  À ÷ˆÀ ÷   À ÷ÃÀ øR/// Handle the condition in a control structure:
+/// - if statement
+/// - do while loop
+/// - switch statement
+/// - while loop À øoÀ øv  À ø|À ø„  À øŠÀ ø’   À øÈTÀ øä/// Starts a pattern À øñÀ øø   À ù €“À ùrJ/// Starts a pattern guard, the expression that follows the 'when' keyword À ù„
+À ù‹   À ù·€ÑÀ úM€Œ/// Starts a parenthesized expression or a record literal. Will be ended with
+/// either [endParenthesizedExpression] or [endRecordLiteral]. À úyÀ ú€   À úŒ€¡À úÜH/// Starts a guard expression in a switch case, after the 'when' keyword À úö
+À úı   À û1€™À ûh//// Ends a record literal with [count] entries. À ûyÀ û€  À û†	À û‹  À û‘À û™   À ûÎ€åÀ üc€‹/// Called after the parser has consumed a record pattern, consisting of a
+/// `(`, a comma-separated sequence of patternFields, and a `)`. À üwÀ ü~  À ü„	À ü‰   À ü·PÀ üÑ/// Ends a pattern À üÜÀ üã   À ı€À ıZG/// End a pattern guard, the expression that follows the 'when' keyword À ıjÀ ıq   À ıÀ şO€¥/// End a parenthesized expression.
+/// These may be within the condition expression of a control structure
+/// but will not be the condition of a control structure. À şjÀ şq   À ş©€ À şùH/// Starts a guard expression in a switch case, after the 'when' keyword À ÿÀ ÿ   À ÿM€ÍÀ ÿÇp/// Called after the parser has consumed a parenthesized pattern, consisting
+/// of a `(`, a pattern, and a `)`. À ÿâÀ ÿé   À ‚®À|‚D/// Called after the parser has consumed a constant pattern, consisting of an
+/// optional `const` and an expression.
+///
+/// Note that some expressions can legally begin with `const`, so there is
+/// ambiguity as to whether to associate the `const` keyword with the constant
+/// pattern or the constant expression.  This ambiguity is resolved in favor
+/// of associating the `const` keyword with the constant pattern.  So for
+/// example, in `case const []` the `const` keyword is passed to
+/// [beginConstantPattern] and [endConstantPattern] rather than
+/// [handleLiteralList]. À‘À™   ÀĞ‚¬À.‚D/// Called after the parser has consumed a constant pattern, consisting of an
+/// optional `const` and an expression.
+///
+/// Note that some expressions can legally begin with `const`, so there is
+/// ambiguity as to whether to associate the `const` keyword with the constant
+/// pattern or the constant expression.  This ambiguity is resolved in favor
+/// of associating the `const` keyword with the constant pattern.  So for
+/// example, in `case const []` the `const` keyword is passed to
+/// [beginConstantPattern] and [endConstantPattern] rather than
+/// [handleLiteralList]. ÀAÀI   À€À„€ö/// Called after the parser has consumed an object pattern, consisting of
+/// an identifier, optional dot and second identifier, optional type
+/// arguments, and a parenthesized list of object pattern fields (see
+/// [handleObjectPatternFields]). ÀŸÀ¦  À¶
+À¾  ÀÂÀÊ   ÀCÀ€õ/// Handle a construct of the form "identifier.identifier" occurring in a part
+/// of the grammar where expressions in general are not allowed.
+/// Substructures:
+/// - Qualified identifier (before the period)
+/// - Identifier (after the period) ÀÀ   ÀJDÀO  À`Àg   À’iÀ—  À­À´  ÀºÀÍ   Àÿ€—À	  À	(À	/  À	<À	C  À	NÀ	a   À	šNÀ	Ÿ  À	¯À	´  À	¿À	Ä  À	ÔÀ	Û   À	ì€ëÀ	ñ  À
+À
+  À
+À
+!  À
+7À
+?  À
+TÀ
+\  À
+tÀ
+y  À
+À
+•  À
+¦À
+­   À
+Û#À
+à    ÀrÀ  ÀÀ'  À,À3  À9À@   ÀxgÀ}  À’À™  ÀŸÀ²   ÀãpÀè  ÀÀ   ÀWZÀ\  ÀxÀ   Àµ€ïÀW€˜/// Called after the parser has consumed a relational pattern, consisting of
+/// an equality operator or relational operator, followed by an expression. ÀoÀv   À¨nÀ­  ÀÓÀÚ   À4À    ÀRlÀW    ÀÂ€‰ÀÇ  ÀêÀñ  ÀøÀÿ  ÀÀ   ÀOfÀT  ÀvÀ}   À¹FÀ¾  ÀĞÀ×   À€íÀ‡z/// The parser saw a void with type arguments (e.g. void<int>).
+/// This is not valid - an error has already been emitted. ÀªÀ±   ÀôqÀBF/// Ended by either [endYieldStatement] or [endInvalidYieldStatement]. ÀVÀ]   Ài€ÈÀÆS/// One of the two possible corresponding end events for
+/// [beginYieldStatement]. ÀØÀß  ÀêÀò  ÀüÀ   À5€óÀ’S/// One of the two possible corresponding end events for
+/// [beginYieldStatement]. À«À²  À½ÀÅ  ÀÕÀÜ  ÀåÀò   À,‰Àb(/// The parser noticed a syntax error, but was able to recover from it. The
+/// error should be reported using the [message], and the code between the
+/// beginning of the [startToken] and the end of the [endToken] should be
+/// highlighted. The [startToken] and [endToken] can be the same token. À€À‰  À‘À˜  À£Àª   À¹‚GÀ'^/// The parser noticed a use of the experimental feature by the flag
+/// [experimentalFlag] that was not enabled, but was able to recover from it.
+/// The error should be reported and the code between the beginning of the
+/// [startToken] and the end of the [endToken] should be highlighted. The
+/// [startToken] and [endToken] can be the same token. ÀI!À[  ÀlÀs  À~À…   ÀfÀ €î/// The parser encountered an [ErrorToken] representing an error
+/// from the scanner but recovered from it. By default, the error is reported
+/// by calling [handleRecoverableError] with the message associated
+/// with the error [token]. ÀÀ   Àn€©À  ÀšÀ£  À«À²  À»ÀÀ  ÀÍ
+ÀÒ  ÀnÀoÀªÀX//// Signals to the listener that the previous statement contained a semantic
+/// error (described by the given [message]). This method can also be called
+/// after [handleExpressionFunctionBody], in which case it signals that the
+/// implicit return statement of the function contained a semantic error. ÀoÀv  À|À…   ÀÉ<ÀÎ  ÀÛÀâ   À	ƒ9À
+‚á/// An expression was encountered consisting of type arguments applied to a
+/// subexpression.  This could validly represent any of the following:
+/// - A type literal (`var x = List<int>;`)
+/// - A function tear-off with type arguments (`var x = f<int>;` or
+///   `var x = importPrefix.f<int>;`)
+/// - A static method tear-off with type arguments (`var x = ClassName.m<int>`
+///   or `var x = importPrefix.ClassName.m<int>;`)
+/// - An instance method tear-off with type arguments (`var x = EXPR.m<int>;`)
+///
+/// Or, in the event of invalid code, it could represent type arguments
+/// erroneously applied to some other expression type (e.g.
+/// `var x = (f)<int>;`).  The client is responsible for reporting an error if
+/// this occurs. À(À/   ÀFVÀw#/// A `new` token was found in a place where an identifier was expected, and
+/// the "constructor tearoffs" feature permits `new` to be used as an
+/// identifier name.  It is the client's responsibility to report an
+/// appropriate error if the "constructor tearoffs" feature is not enabled. ÀÀ”   À êÀ ñ?/// Called after the parser has processed a variable declaration statement,
+/// consisting of `METADATA KEYWORD PATTERN EQUALS EXPRESSION SEMICOLON`.
+///
+/// KEYWORD is either `var` or `final`, and PATTERN may only be one of the
+/// patterns accepted by the `outerPattern` grammar rule defined in the
+/// patterns spec. À!"À!)  À!1À!8  À!?À!F   À!IÀ"‰€ë/// Called after the parser has processed a pattern assignment consisting of
+/// `PATTERN EQUALS EXPRESSION`.
+///
+/// PATTERN may only be one of the patterns accepted by the `outerPattern`
+/// grammar rule defined in the patterns spec. À"¡À"¨                #_fe_analyzer_shared.parser.listener‰ N€œ€Ø€Ù,P‹Œ·¸îï‚‚‚;‚<‚Š‚‹‚É‚ÊƒƒƒPƒQƒ|ƒ}ƒ¤ƒÀ„„„„M„c„g„³„·„ı…M…c…g…¶…Á…ó†††,†-†S†T†—†²†¶†·‡‡1‡‡¦‡ª‡«‡ãˆ%ˆDˆHˆIˆ”ˆÀˆÁˆü‰‰X‰y‰}‰~‰¹‰×‰ùŠ:ŠbŠfŠgŠŠŸŠ°Šú‹‹‹‹`‹‹¬‹Ş‹ßŒŒŒŒ3Œ7Œ8ŒiŒjŒ²ŒÒŒÖŒ×%p~ÌÍbh¥ÌJNOœµ»Eci’ÙÚ‘‘P‘š‘ ‘í’’’:’S’m’…’¢’»’Ö’ï“““K“z“Ë””&”h”†”Š”‹”Ô”é••L•h•l•m•­•¾•Ğ•ã•ú–– –:–P– –½–Á–Â—
+—L—Š—²—æ—ø˜˜&˜j˜”˜˜˜™˜Ö˜ë˜ş™=™_™c™d™—™ÛšššXšršªšÃšÇšÈ›››,›C›T›n››º›¾›¿›õœ7œuœ·œêœû7Ko“—˜ÕêEgklª°ÙŸŸŸgŸxŸ~ŸÌ   H ‹ Œ Ü ó ù¡F¡¡¡Ú¢¢!¢.¢w¢ ¢Æ¢Ê¢Ë££/£5£‚£Î£Ï¤¤T¤x¤’¤Ÿ¤ì¥¥A¥E¥F¥’¥Â¥õ¦¦¦¦h¦¶¦Ô¦Ú§
+§§%§b§r§§Ø§ü¨ ¨¨P¨€¨Ç¨È¨ğ¨ñ©©1©5©6©b©c©œ©ã©éª/ªpªª¢ª£ª×ªøªüªı«&«'«M«k«o«p«¡«¢«ç¬8¬^¬b¬c¬¬‘¬­¬ê­­­­B­C­q­—­›­œ­Ë­Ì­ø®® ®!®H®I®†®£®¹®ş¯'¯=¯A¯B¯‹¯œ¯°¯å¯ü°°+°@°M°œ°Î±±"±j±n±o±±½±Ô²²9²=²>²~²²®²Å²Ù²ó³1³M³Q³R³€³‘³±³Ş³û³ÿ´ ´´]´´¢´£´Æ´Çµµµ!µ:µNµ‡µŸµ£µ¤µí¶<¶`¶¢¶È¶Ì¶Í¶ı·"·&·'·a·Ÿ·î¸ ¸!¸?¸¸£¸§¸¨¸Æ¹¹F¹‡¹‹¹Œ¹®¹îº.ºoºsºtºšºÚ»»[»_»`»°»è»é¼¼¼9¼^¼u¼”¼±¼Ñ¼ğ½½½½V½z½~½½½½¾½Ú¾ ¾B¾F¾G¾Š¾›¾­¾º¾æ¾ì¿¿#¿?¿Z¿v¿¿­¿Å¿ã¿ôÀ @À @$À @<À @@À @AÀ @„À @•À @§À @´À @àÀ @æÀ AÀ AÀ A9À ATÀ ApÀ AŠÀ A§À A¿À AİÀ AîÀ BÀ BÀ B^À BrÀ B‰À BŸÀ B¶À BËÀ BãÀ BöÀ CÀ CÀ C2À CEÀ CIÀ CJÀ C‘À C¢À C´À CÁÀ CíÀ CóÀ DÀ D.À DJÀ DeÀ DÀ D›À D¸À DĞÀ DîÀ DÿÀ EÀ E/À EoÀ EƒÀ EšÀ E°À EÇÀ EÜÀ EôÀ FÀ F À F/À FCÀ FVÀ FZÀ F[À F§À F¸À FÊÀ F×À GÀ G	À G)À GHÀ GdÀ GÀ G›À GµÀ GÒÀ GêÀ HÀ HÀ H1À HIÀ H‰À HÀ H´À HÊÀ HáÀ HöÀ IÀ I!À I:À IIÀ I]À IpÀ ItÀ IuÀ I¸À IÉÀ IÛÀ IèÀ JÀ JÀ J:À JPÀ JlÀ J‡À J£À J½À JÚÀ JòÀ KÀ K!À K9À KQÀ KeÀ K|À K’À K©À K¾À KÖÀ KéÀ LÀ LÀ L%À L8À L<À L=À LÀ L’À L¦À LÛÀ LòÀ MÀ M!À M6À MCÀ MÀ M¿À MÓÀ NÀ NÀ N À NpÀ N‘À NÊÀ NøÀ NüÀ NıÀ OMÀ OsÀ O½À OğÀ OôÀ OõÀ PEÀ P{À P°À PÿÀ Q7À Q;À Q<À QŒÀ QÂÀ QóÀ R)À RNÀ RÀ R‘À R’À RÔÀ RûÀ S$À S%À SmÀ SºÀ SøÀ T5À TnÀ ToÀ T˜À T¶À TºÀ T»À TèÀ TéÀ UÀ U5À U9À U:À U…À UÒÀ VÀ VCÀ V“À V²À VíÀ W,À WtÀ WuÀ WÄÀ WæÀ WıÀ XÀ XÀ X.À X/À XXÀ XyÀ X}À X~À X¤À X¥À XÈÀ XãÀ XçÀ XèÀ Y4À YƒÀ YÒÀ ZÀ ZÀ Z3À ZJÀ Z~À ZÀ ZÃÀ [À [YÀ [–À [œÀ [±À [ÈÀ [ÚÀ [îÀ [ûÀ \À \ À \7À \jÀ \À \ÇÀ \ËÀ \ÌÀ ]À ])À ]@À ]uÀ ]vÀ ]”À ]šÀ ]¯À ]ÀÀ ]×À ]ëÀ ]øÀ ^À ^À ^4À ^KÀ ^~À ^³À ^ØÀ ^ÜÀ ^İÀ _%À _tÀ _ÃÀ _íÀ `À `À `iÀ `²À aÀ aOÀ a–À aÊÀ bÀ b8À b<À b=À bhÀ bˆÀ bŒÀ bÀ bÕÀ bÛÀ c)À cMÀ c•À c–À c¿À cÀÀ cøÀ dÀ dÀ dÀ d?À d@À doÀ duÀ dºÀ dËÀ dßÀ dùÀ eÀ e0À e6À e€À e‘À e«À eÈÀ eîÀ f7À fZÀ f^À f_À fŸÀ f´À fÓÀ gÀ g&À g*À g+À g\À gÀ g¢À g¦À g§À gçÀ güÀ hÀ h!À hiÀ hÀ hÏÀ hïÀ hóÀ hôÀ i%À iGÀ iiÀ imÀ inÀ i®À iÃÀ iâÀ ièÀ j(À j^À jÀ j±À jµÀ j¶À jïÀ k7À kÀ k‡À kÔÀ k÷À lÀ l+À lDÀ l^À lvÀ l“À l¬À lÇÀ làÀ lõÀ löÀ m?À mTÀ mfÀ m…À mÇÀ møÀ müÀ mıÀ n@À nQÀ ncÀ nvÀ nÀ nŸÀ n³À nØÀ nŞÀ o&À osÀ oÃÀ pÀ pRÀ p„À p«À p¯À p°À p×À pØÀ qÀ q;À q_À quÀ qyÀ qzÀ q£À qÃÀ qÇÀ qÈÀ qíÀ qîÀ rÀ r(À r,À r-À rUÀ rVÀ rÀ r¬À r°À r±À rÛÀ rÜÀ sÀ s"À s&À s'À sQÀ sRÀ syÀ s˜À sœÀ sÀ sÈÀ sÉÀ tÀ tNÀ t€À t¶À tüÀ uÀ uÀ uÀ u\À umÀ uyÀ u’À u¬À uÀÀ vÀ v'À v+À v,À vgÀ v¡À vãÀ w1À wJÀ wdÀ wxÀ w§À wÇÀ wËÀ wÌÀ wøÀ wùÀ x À xAÀ xEÀ xFÀ xuÀ xvÀ x»À xÏÀ yÀ y,À y{À y›À yŸÀ y À yÜÀ yøÀ yüÀ yıÀ z4À z5À zÀ z­À z±À z²À zäÀ zåÀ {À {?À {CÀ {DÀ {qÀ {rÀ {¯À {ÎÀ |
+À |,À |0À |1À |_À |À |²À |¶À |·À |çÀ |èÀ }'À }GÀ }À }¦À }ªÀ }«À }ÚÀ ~À ~3À ~7À ~8À ~`À ~aÀ ~†À ~®À ~²À ~³À ~ÜÀ ~İÀ #À AÀ EÀ FÀ fÀ †À ŠÀ ‹À ÙÀ €&À €KÀ €yÀ €œÀ € À €¡À €èÀ 8À rÀ ¢À ÇÀ ËÀ ÌÀ ‚À ‚eÀ ‚tÀ ‚¥À ‚ËÀ ‚ÏÀ ‚ĞÀ ‚òÀ ƒ	À ƒÀ ƒÀ ƒKÀ ƒLÀ ƒyÀ ƒ›À ƒŸÀ ƒ À ƒïÀ ƒğÀ „:À „KÀ „WÀ „vÀ „»À „àÀ „äÀ „åÀ …À …À …KÀ …\À …ŠÀ …×À …ôÀ …øÀ …ùÀ †5À †VÀ †ZÀ †[À †ªÀ †ÔÀ ‡À ‡1À ‡5À ‡6À ‡`À ‡aÀ ‡±À ‡²À ‡ôÀ ˆÀ ˆÀ ˆÀ ˆ_À ˆ„À ˆˆÀ ˆ‰À ˆØÀ ‰À ‰`À ‰ƒÀ ‰›À ‰œÀ ‰×À ‰èÀ ŠÀ Š4À Š8À Š9À ŠtÀ Š±À ŠÇÀ ŠùÀ ‹9À ‹yÀ ‹­À ‹ÙÀ ‹îÀ ŒÀ Œ
+À ŒÀ ŒZÀ ŒkÀ Œ·À À À 3À ZÀ uÀ ‘À «À ÈÀ æÀ ıÀ À À WÀ hÀ |À ±À ÈÀ âÀ ÷À À À dÀ –À ³À ·À ¸À üÀ À !À VÀ mÀ ‡À œÀ ±À ¾À ‘	À ‘;À ‘{À ‘À ‘×À ‘ÛÀ ‘ÜÀ ’$À ’5À ’IÀ ’~À ’•À ’¯À ’ÄÀ ’ÙÀ ’æÀ “5À “gÀ “§À “»À ”À ”À ”À ”UÀ ”fÀ ”zÀ ”¯À ”ÆÀ ”àÀ ”õÀ •
+À •À •XÀ •œÀ •ÜÀ •ğÀ –8À –<À –=À –†À –—À –«À –àÀ –÷À —À —&À —;À —HÀ —˜À —ÊÀ ˜
+À ˜À ˜fÀ ˜jÀ ˜kÀ ˜´À ˜ÅÀ ˜ÙÀ ™À ™%À ™?À ™TÀ ™iÀ ™vÀ ™ÆÀ ™øÀ š8À šLÀ š”À š˜À š™À šæÀ š÷À ›À ›@À ›WÀ ›qÀ ›†À ››À ›¨À ›êÀ œ.À œnÀ œ‚À œÊÀ œÎÀ œÏÀ À 'À 8À LÀ À ˜À ²À ÇÀ ÜÀ éÀ /À sÀ ³À ÌÀ ŸÀ ŸÀ ŸÀ ŸBÀ ŸCÀ ŸgÀ Ÿ…À Ÿ‰À ŸŠÀ Ÿ¯À Ÿ°À ŸïÀ  À  À  ]À  oÀ  ¿À  ÙÀ  İÀ  ŞÀ ¡À ¡À ¡8À ¡mÀ ¡—À ¡›À ¡œÀ ¡½À ¡¾À ¡øÀ ¢	À ¢À ¢JÀ ¢`À ¢dÀ ¢eÀ ¢ˆÀ ¢‰À ¢ÈÀ ¢ÙÀ £À £À £]À £kÀ £}À £ÈÀ £àÀ £äÀ £åÀ ¤À ¤À ¤^À ¤†À ¤ŠÀ ¤‹À ¤·À ¤¸À ¤åÀ ¥'À ¥mÀ ¥‘À ¥•À ¥–À ¥ãÀ ¦À ¦gÀ ¦~À ¦ËÀ ¦öÀ ¦úÀ ¦ûÀ §GÀ §‰À §ÖÀ ¨À ¨À ¨À ¨GÀ ¨yÀ ¨œÀ ¨ À ¨¡À ¨íÀ ©À ©hÀ ©À ©”À ©•À ©°À ©îÀ ªÀ ªÀ ªÀ ªJÀ ª`À ªdÀ ªeÀ ªŒÀ ªÀ ªÊÀ ªïÀ «À «)À «-À «.À «ZÀ «[À «œÀ «½À «ÁÀ «ÂÀ «ïÀ «ğÀ ¬2À ¬TÀ ¬XÀ ¬YÀ ¬À ¬‚À ¬ËÀ ¬èÀ ¬ìÀ ¬íÀ ­À ­ À ­AÀ ­zÀ ­¡À ­¥À ­¦À ­ĞÀ ­ÑÀ ®À ®0À ®4À ®5À ®vÀ ®—À ®›À ®œÀ ®ÉÀ ®ÊÀ ¯À ¯-À ¯1À ¯2À ¯nÀ ¯¾À °À °)À °/À °aÀ °¥À °åÀ ±/À ±>À ±DÀ ±€À ±ÏÀ ²À ²2À ²WÀ ²[À ²\À ²¤À ²íÀ ³,À ³_À ³eÀ ³zÀ ³‹À ³ÅÀ ³ñÀ ³õÀ ³öÀ ´<À ´xÀ ´~À ´§À ´ÒÀ ´ÓÀ µÀ µPÀ µ€À µ”À µ»À µ×À µòÀ ¶À ¶(À ¶EÀ ¶]À ¶{À ¶˜À ¶™À ¶ãÀ ¶ôÀ ·À ·!À ·FÀ ·bÀ ·hÀ ·ˆÀ ·¢À ·¾À ·ØÀ ·õÀ ¸À ¸+À ¸<À ¸TÀ ¸lÀ ¸ŒÀ ¸À ¸‘À ¸­À ¸õÀ ¸öÀ ¹2À ¹CÀ ¹UÀ ¹iÀ ¹|À ¹“À ¹­À ¹ÂÀ ¹ÏÀ ºÀ º=À ºAÀ ºBÀ ºkÀ ºlÀ º”À º•À ººÀ º×À ºÛÀ ºÜÀ »+À »GÀ »KÀ »LÀ »~À »œÀ » À »¡À »¹À »úÀ ¼À ¼À ¼À ¼XÀ ¼nÀ ¼rÀ ¼sÀ ¼À ¼ÚÀ ½À ½6À ½:À ½;À ½‹À ½·À ½äÀ ¾À ¾À ¾À ¾]À ¾‡À ¾·À ¾ÙÀ ¾İÀ ¾ŞÀ ¿'À ¿hÀ ¿nÀ ¿½À ÀÀ À;À ÀrÀ À›À ÀŸÀ À À ÀèÀ Á3À ÁvÀ Á|À ÁÌÀ ÂÀ ÂjÀ Â·À ÂÇÀ ÃÀ Ã9À ÃbÀ ÃfÀ ÃgÀ Ã·À ÄÀ ÄÀ ÄZÀ Ä{À ÄÀ Ä€À Ä£À Ä»À Ä¿À ÄÀÀ ÄíÀ ÄîÀ Å!À Å'À Å<À ÅUÀ ÅtÀ ÅzÀ Å˜À ÅãÀ Æ.À ÆDÀ Æ”À Æ°À Æ´À ÆµÀ ÆÖÀ Æ×À ÇÀ ÇÀ Ç#À Ç4À ÇAÀ ÇTÀ ÇrÀ Ç“À Ç—À Ç˜À ÇĞÀ ÇÑÀ ÈÀ ÈÀ È"À È;À È{À È¢À È¦À È§À ÈÕÀ ÈÖÀ ÉÀ ÉÀ É.À ÉEÀ ÉYÀ ÉsÀ É¶À ÉÔÀ ÉØÀ ÉÙÀ ÊÀ ÊÀ ÊKÀ ÊjÀ ÊnÀ ÊoÀ ÊÀ ÊİÀ ËÀ Ë/À Ë3À Ë4À Ë`À ËÀ Ë…À Ë†À ËÎÀ ËãÀ ËôÀ ÌÀ Ì7À Ì8À Ì‡À ÌÕÀ ÌùÀ Í6À Í7À Í|À ÍÁÀ ÍæÀ ÍìÀ ÎÀ ÎÀ ÎÀ ÎVÀ ÎnÀ Î¶À ÎÔÀ ÎØÀ ÎÙÀ ÏÀ ÏÀ Ï@À Ï_À ÏcÀ ÏdÀ ÏŸÀ Ï»À ĞÀ ĞÀ ĞÀ ĞÀ ĞFÀ ĞGÀ ĞŠÀ ĞŸÀ Ğ¶À ĞĞÀ ĞåÀ ĞòÀ Ñ0À ÑTÀ ÑXÀ ÑYÀ ÑœÀ Ñ­À ÑºÀ ÑÜÀ ÒÀ ÒÀ ÒZÀ Ò€À Ò„À Ò…À Ò°À Ò±À ÒğÀ ÓÀ ÓÀ ÓÀ ÓCÀ ÓDÀ ÓoÀ ÓÀ Ó“À Ó”À Ó¾À ÓÚÀ ÓŞÀ ÓßÀ Ô*À Ô]À ÔˆÀ Ô¥À Ô©À ÔªÀ ÔÛÀ ÕÀ ÕÀ ÕÀ ÕTÀ ÕrÀ ÕxÀ Õ¹À ÕæÀ ÕçÀ ÖÀ Ö3À Ö7À Ö8À Ö„À Ö®À Ö¯À ÖÿÀ ×8À ×_À ×~À ×‚À ×ƒÀ ×¨À ×ÛÀ ØÀ Ø3À Ø7À Ø8À Ø„À Ø¢À Ø×À ØØÀ Ù À Ù2À Ù_À Ù`À Ù«À ÙêÀ ÚÀ ÚÀ ÚÀ ÚIÀ ÚJÀ ÚsÀ Ú”À Ú˜À Ú™À ÚÉÀ ÚçÀ ÚëÀ ÚìÀ Û6À ÛzÀ Û»À Û¼À ÜÀ Ü@À Ü]À Ü…À Ü¨À Ü¬À Ü­À ÜùÀ İ4À İQÀ İ{À İ À İ¤À İ¥À İïÀ Ş3À Ş_À Ş`À Ş­À ŞÆÀ ŞóÀ ŞôÀ ßAÀ ßZÀ ßŠÀ ß«À ß¯À ß°À ßùÀ àÀ à0À àCÀ à~À àšÀ àÁÀ àãÀ àçÀ àèÀ á4À áIÀ ákÀ áƒÀ á›À áÖÀ áòÀ âÀ âCÀ âGÀ âHÀ âÀ âÙÀ âìÀ ãÀ ãAÀ ãEÀ ãFÀ ã–À ã³À ãàÀ ä&À äCÀ äGÀ äHÀ ä•À ä¬À äåÀ äæÀ å1À åHÀ å\À åvÀ åÁÀ åïÀ åóÀ åôÀ æÀ æÀ æhÀ æªÀ æÆÀ æÊÀ æËÀ æëÀ ç7À çZÀ ç^À ç_À çÀ çÀ ç¹À çÙÀ çİÀ çŞÀ èÀ è2À è6À è7À è_À è|À è€À èÀ èÀ èÚÀ èúÀ èşÀ èÿÀ éÀ é^À éÀ é…À é†À é±À éÑÀ éÕÀ éÖÀ êÀ êÀ êYÀ êŠÀ ê¢À ê¦À ê§À êêÀ ëÀ ë$À ëNÀ ëmÀ ëqÀ ërÀ ë´À ëêÀ ëñÀ ìÀ ì4À ì8À ì9À ìSÀ ì¢À ì¿À ìÃÀ ìÄÀ íÀ íMÀ íšÀ í·À í»À í¼À íÚÀ íéÀ íşÀ îÀ î-À îvÀ îÅÀ îÕÀ îëÀ îñÀ ïÀ ïÀ ïÀ ïfÀ ï¦À ïîÀ ğ
+À ğÀ ğÀ ğ7À ğTÀ ğXÀ ğYÀ ğ–À ğ´À ğ¸À ğ¹À ğãÀ ñÀ ñÀ ñÀ ñSÀ ñ‹À ñµÀ ñÓÀ ñ×À ñØÀ òÀ ò'À ò+À ò,À òVÀ òWÀ ò~À òÀ ò¡À ò¢À òÊÀ òçÀ òëÀ òìÀ ó=À óƒÀ ó‡À óˆÀ óÅÀ ó÷À óûÀ óüÀ ô&À ô>À ôBÀ ôCÀ ôoÀ ôÀ ô”À ô•À ôºÀ ôÔÀ ôØÀ ôÙÀ õ!À õTÀ õ|À õ€À õÀ õ¹À õæÀ õêÀ õëÀ öÀ ö.À ö2À ö3À öwÀ ö·À öÕÀ öÙÀ öÚÀ ÷À ÷PÀ ÷—À ÷¼À ÷ÀÀ ÷ÁÀ ÷ôÀ ø	À øÀ ø8À øKÀ ø™À øÁÀ øÅÀ øÆÀ øİÀ ù À ùÀ ùÀ ùÀ ùkÀ ù’À ù°À ù´À ùµÀ úÀ úFÀ ú‰À úŠÀ úÕÀ ûÀ û*À û.À û/À ûaÀ û¨À ûÇÀ ûËÀ ûÌÀ üÀ ü\À ü‘À ü°À ü´À üµÀ üÊÀ üëÀ ıÀ ıÀ ı	À ıSÀ ıyÀ ı—À ı›À ıœÀ ıÂÀ şÀ şHÀ şyÀ ş¢À ş¦À ş§À şòÀ ÿ À ÿFÀ ÿJÀ ÿKÀ ÿšÀ ÿÀÀ ÿñÀ À À À lÀ –À œÀ éÀ:À‰ÀÕÀÀZÀuÀ¨ÀÉÀÍÀÎÀÀHÀNÀ›ÀìÀ;À‡ÀÊÀÀ'ÀXÀyÀ}À~ÀÊÀÀYÀ}À™ÀİÀüÀ ÀÀRÀ•ÀªÀÛÀÀ(ÀCÀGÀHÀoÀ‹ÀÀÀ×ÀøÀüÀıÀ	"À	kÀ	“À	—À	˜À	éÀ	êÀ
+ À
+À
+1À
+NÀ
+nÀ
+ˆÀ
+ À
+¸À
+ÔÀ
+ØÀ
+ÙÀ
+ÿÀ ÀKÀqÀuÀvÀ¼ÀÜÀàÀáÀÀPÀTÀUÀ‡À®À²À³ÀÀPÀ~À¡À¥À¦ÀâÀÀÀÀOÀPÀ„À»À¿ÀÀÀäÀ!ÀHÀLÀMÀ…À²À¶À·ÀßÀüÀ ÀÀCÀ€À¹ÀíÀñÀòÀ;ÀfÀgÀ¢À¿ÀÀ.À2À3ÀnÀ‹ÀÏÀşÀ%À)À*ÀxÀÅÀÀ[ÀzÀ¶À·ÀşÀNÀ›ÀçÀ ÀCÀÀ¬ÀıÀÀÀEÀ•ÀÛÀùÀ%ÀgÀkÀlÀxÀ”ÀÛÀÀÀÀhÀ·ÀÀQÀÀÂÀÆÀÇÀêÀÀÀÀUÀÀÌÀÀ:À‹ÀÀÀÀÀaÀŸÀğÀÀCÀDÀ“ÀÛÀ"ÀpÀÀÀìÀ 8À >À ‹À ÕÀ êÀ!À!RÀ!‡À!‹À!ŒÀ!ÛÀ!şÀ"À"QÀ"‚À"±À"ÔÀ"ØÀ"Ú    UnescapeErrorListenerListener âİ

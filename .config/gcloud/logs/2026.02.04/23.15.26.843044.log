@@ -1,0 +1,28 @@
+2026-02-04 23:15:26,844 DEBUG    root            Loaded Command Group: ['gcloud', 'run']
+2026-02-04 23:15:27,078 DEBUG    root            Loaded Command Group: ['gcloud', 'run', 'deploy']
+2026-02-04 23:15:27,108 DEBUG    root            Running [gcloud.run.deploy] with arguments: [--allow-unauthenticated: "True", --image: "gcr.io/qwiklabs-gcp-01-517fc49314f1/ag-web_2026-02-04_23-14", --max-instances: "<googlecloudsdk.command_lib.run.flags._ScaleValue object at 0x7fb9de8aff50>", --min-instances: "<googlecloudsdk.command_lib.run.flags._ScaleValue object at 0x7fb9de8bdcd0>", --platform: "managed", --region: "us-central1", SERVICE: "ag-web"]
+2026-02-04 23:15:27,168 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2026-02-04 23:15:27,379 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/services/run.googleapis.com?alt=json HTTP/1.1" 200 None
+2026-02-04 23:15:27,516 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): us-central1-run.googleapis.com:443
+2026-02-04 23:15:27,651 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/qwiklabs-gcp-01-517fc49314f1/services/ag-web?alt=json HTTP/1.1" 200 None
+2026-02-04 23:15:27,663 INFO     ___FILE_ONLY___ Deploying container to Cloud Run service [[1mag-web[m] in project [[1mqwiklabs-gcp-01-517fc49314f1[m] region [[1mus-central1[m]
+
+2026-02-04 23:15:27,665 INFO     ___FILE_ONLY___ Deploying...
+2026-02-04 23:15:27,672 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): us-central1-run.googleapis.com:443
+2026-02-04 23:15:27,926 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "PUT /apis/serving.knative.dev/v1/namespaces/qwiklabs-gcp-01-517fc49314f1/services/ag-web?alt=json HTTP/1.1" 200 None
+2026-02-04 23:15:27,937 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): run.googleapis.com:443
+2026-02-04 23:15:28,109 DEBUG    urllib3.connectionpool https://run.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/us-central1/services/ag-web:getIamPolicy?alt=json HTTP/1.1" 200 None
+2026-02-04 23:15:28,115 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): run.googleapis.com:443
+2026-02-04 23:15:28,380 DEBUG    urllib3.connectionpool https://run.googleapis.com:443 "POST /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/us-central1/services/ag-web:setIamPolicy?alt=json HTTP/1.1" 200 None
+2026-02-04 23:15:28,397 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): us-central1-run.googleapis.com:443
+2026-02-04 23:15:57,567 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "POST /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/us-central1/operations/2201aa08-55a1-46ae-bd59-f8e78c4052a5:wait?alt=json HTTP/1.1" 200 None
+2026-02-04 23:15:57,601 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): us-central1-run.googleapis.com:443
+2026-02-04 23:15:57,724 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "POST /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/us-central1/operations/2201aa08-55a1-46ae-bd59-f8e78c4052a5:wait?alt=json HTTP/1.1" 200 None
+2026-02-04 23:15:57,750 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): us-central1-run.googleapis.com:443
+2026-02-04 23:15:57,855 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "POST /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/us-central1/operations/2201aa08-55a1-46ae-bd59-f8e78c4052a5:wait?alt=json HTTP/1.1" 200 None
+2026-02-04 23:15:57,892 INFO     ___FILE_ONLY___ Service [[1mag-web[m] revision [[1mag-web-00002-258[m] has been deployed and is serving [1m100[m percent of traffic.
+Service URL: [1mhttps://ag-web-338627235002.us-central1.run.app[m
+
+2026-02-04 23:15:57,893 DEBUG    root            Chosen display Format:none
+2026-02-04 23:15:57,893 INFO     root            Display format: "none"
+2026-02-04 23:15:57,940 DEBUG    root            SDK update checks are disabled.
