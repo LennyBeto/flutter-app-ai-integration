@@ -18,13 +18,14 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Gemini Chat App'),
+      home: const MyHomePage(title: 'Gemini Chat'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
+
   final String title;
 
   @override
@@ -32,7 +33,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  // Your required snippets: State variables
   final TextEditingController _controller = TextEditingController();
   final List<Map<String, String>> _messages = [];
   String _cloudRunHost = '';
@@ -43,7 +43,6 @@ class _MyHomePageState extends State<MyHomePage> {
     _loadConfig();
   }
 
-  // Your required snippets: Config Loader
   Future<void> _loadConfig() async {
     try {
       final configString = await rootBundle.loadString('assets/config.json');
@@ -52,15 +51,12 @@ class _MyHomePageState extends State<MyHomePage> {
         _cloudRunHost = config['cloudRunHost'];
       });
     } catch (e) {
-      debugPrint('Error loading config: $e');
+      debugPrint("Error loading config: $e");
     }
   }
 
-  // Your required snippets: Send Message Logic
   Future<void> _sendMessage() async {
-    if (_controller.text.isEmpty) {
-      return;
-    }
+    if (_controller.text.isEmpty) return;
 
     final message = _controller.text;
     _controller.clear();
@@ -69,22 +65,19 @@ class _MyHomePageState extends State<MyHomePage> {
       _messages.add({'sender': 'user', 'text': message});
     });
 
-    if (_cloudRunHost.isEmpty ||
-        _cloudRunHost == 'YOUR_CLOUD_RUN_ENDPOINT_URL') {
+    if (_cloudRunHost.isEmpty || _cloudRunHost == 'YOUR_CLOUD_RUN_ENDPOINT_URL') {
       setState(() {
         _messages.add({
           'sender': 'bot',
-          'text':
-              'Please configure the Cloud Run endpoint in assets/config.json'
+          'text': 'Please configure the Cloud Run endpoint in assets/config.json'
         });
       });
       return;
     }
 
     try {
-      var endpoint_query =
-          Uri.https(_cloudRunHost, '/ask_gemini', {'query': message});
-      final response = await http.get(endpoint_query);
+      var endpointQuery = Uri.https(_cloudRunHost, '/ask_gemini', {'query': message});
+      final response = await http.get(endpointQuery);
 
       if (response.statusCode == 200) {
         var responseText = utf8.decode(response.bodyBytes);
@@ -94,8 +87,10 @@ class _MyHomePageState extends State<MyHomePage> {
         });
       } else {
         setState(() {
-          _messages
-              .add({'sender': 'bot', 'text': 'Error: ${response.statusCode}'});
+          _messages.add({
+            'sender': 'bot',
+            'text': 'Error: ${response.statusCode}'
+          });
         });
       }
     } catch (e) {
@@ -109,7 +104,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Gemini Chat App'),
+        title: Text(widget.title),
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: Column(
         children: [
@@ -121,18 +117,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 final message = _messages[index];
                 final isUserMessage = message['sender'] == 'user';
                 return Align(
-                  alignment: isUserMessage
-                      ? Alignment.centerRight
-                      : Alignment.centerLeft,
+                  alignment: isUserMessage ? Alignment.centerRight : Alignment.centerLeft,
                   child: Container(
                     margin: const EdgeInsets.symmetric(vertical: 4.0),
                     padding: const EdgeInsets.all(12.0),
                     decoration: BoxDecoration(
-                      color:
-                          isUserMessage ? Colors.blue[100] : Colors.grey[200],
+                      color: isUserMessage ? Colors.blue[100] : Colors.grey[200],
                       borderRadius: BorderRadius.circular(8.0),
                     ),
-                    child: Text(message['text']!),
+                    child: Text(message['text'] ?? ''),
                   ),
                 );
               },
@@ -147,13 +140,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     controller: _controller,
                     decoration: const InputDecoration(
                       hintText: 'Enter a message',
+                      border: OutlineInputBorder(),
                     ),
                     onSubmitted: (text) => _sendMessage(),
                   ),
                 ),
+                const SizedBox(width: 8),
                 IconButton(
                   icon: const Icon(Icons.send),
                   onPressed: _sendMessage,
+                  color: Theme.of(context).primaryColor,
                 ),
               ],
             ),
@@ -162,4 +158,4 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-}
+} // Properly closed class

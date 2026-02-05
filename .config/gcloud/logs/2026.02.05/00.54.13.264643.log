@@ -1,0 +1,11 @@
+2026-02-05 00:54:13,265 DEBUG    root            Loaded Command Group: ['gcloud', 'run']
+2026-02-05 00:54:13,421 DEBUG    root            Loaded Command Group: ['gcloud', 'run', 'services']
+2026-02-05 00:54:13,493 DEBUG    root            Loaded Command Group: ['gcloud', 'run', 'services', 'describe']
+2026-02-05 00:54:13,511 DEBUG    root            Running [gcloud.run.services.describe] with arguments: [--format: "value(status.url)", --region: "us-central1", SERVICE: "ag-web"]
+2026-02-05 00:54:13,613 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): us-central1-run.googleapis.com:443
+2026-02-05 00:54:13,719 DEBUG    urllib3.connectionpool https://us-central1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/qwiklabs-gcp-01-517fc49314f1/services/ag-web?alt=json HTTP/1.1" 200 None
+2026-02-05 00:54:13,726 DEBUG    root            Chosen display Format:service value(status.url)
+2026-02-05 00:54:13,726 INFO     root            Display format: "service value(status.url)"
+2026-02-05 00:54:13,780 INFO     ___FILE_ONLY___ https://ag-web-hzkupnsgea-uc.a.run.app
+
+2026-02-05 00:54:13,780 DEBUG    root            SDK update checks are disabled.

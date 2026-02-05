@@ -30,3 +30,18 @@
 2026-02-04 23:50:51.787 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8264
 2026-02-04 23:58:16.878 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8264
 2026-02-04 23:58:32.791 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8264
+2026-02-05 00:06:54.026 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2026-02-05 00:06:54.027 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2026-02-05 00:06:54.027 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2026-02-05 00:08:18.681 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8264
+2026-02-05 00:08:34.850 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8264
+2026-02-05 00:15:43.831 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8264
+2026-02-05 00:15:54.053 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8264
+2026-02-05 00:24:19.703 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8264
+2026-02-05 00:38:28.049 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8264
+2026-02-05 00:38:41.320 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8264
+2026-02-05 00:49:02.510 [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: false, activationEvent: 'onNotebookSerializer:jupyter-notebook'
+2026-02-05 00:55:15.093 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8264
+2026-02-05 00:56:03.877 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8264
+2026-02-05 01:02:41.216 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8264
+2026-02-05 01:02:51.195 [warning] [Decorations] CAPPING events from decorations provider vscode.git 8264

@@ -118,3 +118,121 @@ flutter pub get
 fwr
 #1770249717
 cd ..
+#1770249724
+git add .
+#1770249823
+git commit -m "feat: chat_app frontend added"
+#1770249851
+git push -f origin main
+#1770250039
+[200~cat <<EOF > ~/chat_app/assets/config.json
+{
+    "cloudRunHost": "$BACKEND_APP_HOST"
+}
+EOF~
+
+
+#1770250061
+cat <<EOF > ~/chat_app/assets/config.json
+{
+    "cloudRunHost": "$BACKEND_APP_HOST"
+}
+EOF
+
+#1770250084
+cd ~/chat_app
+#1770250094
+flutter pub get
+#1770250108
+fwr
+#1770250540
+flutter pub get
+#1770250550
+fwr
+#1770251811
+BACKEND_APP_HOST=$(gcloud run services describe ag-web --region us-central1 --format 'value(status.url)' | cut -d'/' -f3);
+#1770251818
+echo $BACKEND_APP_HOST
+#1770251856
+mkdir ~/chat_app/assets
+#1770251875
+cat <<EOF > ~/chat_app/assets/config.json
+{
+    "cloudRunHost": "$BACKEND_APP_HOST"
+}
+EOF
+
+#1770251904
+flutter pub get
+#1770251917
+fwr
+#1770252101
+cd ..
+#1770252109
+cat << EOF >> ~/ag-web/app/app.py
+#
+# Reasoning Engine
+#
+NB_R_ENGINE_ID = "REASONING_ENGINE_ID"
+
+from vertexai.preview import reasoning_engines
+remote_agent = reasoning_engines.ReasoningEngine(
+    f"projects/{PROJECT_ID}/locations/{LOCATION}/reasoningEngines/{NB_R_ENGINE_ID}"
+)
+
+# Endpoint for the Flask app to call the Agent
+@app.route("/ask_gemini", methods=["GET"])
+def ask_gemini():
+    query = request.args.get("query")
+    log.info("[ask_gemini] query: " + query)
+    retries = 0
+    resp = None
+    while retries < MAX_RETRIES:
+        try:
+            retries += 1
+            resp = remote_agent.query(input=query)
+            if (resp == None) or (len(resp["output"].strip()) == 0):
+                raise ValueError("Empty response.")
+            break
+        except Exception as e:
+            log.error("[ask_gemini] error: " + str(e))
+    if (resp == None) or (len(resp["output"].strip()) == 0):
+        raise ValueError("Too many retries.")
+        return "No response received from Reasoning Engine."
+    else:
+        return resp["output"]
+EOF
+
+#1770252151
+sed -i 's/REASONING_ENGINE_ID/6655642950090883072/' ~/ag-web/app/app.py
+#1770252181
+cd ~/ag-web/app
+#1770252192
+./deploy.sh qwiklabs-gcp-01-517fc49314f1 us-central1
+#1770252734
+cd ~/ag-web/app
+#1770252745
+./deploy.sh qwiklabs-gcp-01-517fc49314f1 us-central1
+#1770252852
+BACKEND_APP_HOST=$(gcloud run services describe ag-web --region us-central1 --format 'value(status.url)' | cut -d'/' -f3);
+#1770252854
+echo $BACKEND_APP_HOST
+#1770252882
+cat <<EOF > ~/chat_app/assets/config.json
+{
+    "cloudRunHost": "$BACKEND_APP_HOST"
+}
+EOF
+
+#1770252898
+cd ~/chat_app
+#1770252907
+flutter pub get
+#1770252916
+fwr
+#1770253351
+flutter pub get
+#1770253362
+fwr
+#1770253460
+cd ..

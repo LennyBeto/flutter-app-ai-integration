@@ -5,3 +5,4 @@
 [2024-06-14T12:07:20.416Z] error listen EADDRNOTAVAIL: address not available 10.1.0.2:8081
 [22:16:51] Using the in-memory credential store as the operating system's credential store could not be accessed. Please see https://aka.ms/vscode-server-keyring on how to set this up. Details: Cannot autolaunch D-Bus without X11 $DISPLAY
 [23:22:05] [File Watcher (node.js)] Failed to watch /home/ide-dev/flutter/.git/refs/remotes/origin/stable for changes using fs.watch() (Error: ENOSPC: System limit for number of file watchers reached, watch '/home/ide-dev/flutter/.git/refs/remotes/origin/stable')
+File not found: /usr/lib/code-server/lib/vscode/node_modules/vscode-regexp-languagedetection/dist/index.js

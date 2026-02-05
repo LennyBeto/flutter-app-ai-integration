@@ -1,0 +1,796 @@
+2026-02-05 00:43:13,766 DEBUG    root            Loaded Command Group: ['gcloud', 'builds']
+2026-02-05 00:43:13,864 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'submit']
+2026-02-05 00:43:14,114 DEBUG    root            Running [gcloud.builds.submit] with arguments: [--tag: "gcr.io/qwiklabs-gcp-01-517fc49314f1/ag-web_2026-02-05_00-43"]
+2026-02-05 00:43:14,137 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-02-05 00:43:14,139 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2026-02-05 00:43:14,210 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2026-02-05 00:43:14,365 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:14,462 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/qwiklabs-gcp-01-517fc49314f1_cloudbuild?alt=json HTTP/1.1" 200 849
+2026-02-05 00:43:14,468 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:14,592 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b?alt=json&maxResults=1000&prefix=qwiklabs-gcp-01-517fc49314f1_cloudbuild&project=qwiklabs-gcp-01-517fc49314f1 HTTP/1.1" 200 1015
+2026-02-05 00:43:14,603 INFO     root            Not using ignore file.
+2026-02-05 00:43:14,604 INFO     ___FILE_ONLY___ Creating temporary archive of 4 file(s) totalling 6.4 KiB before compression.
+
+2026-02-05 00:43:14,607 DEBUG    root            Added [deploy.sh]
+2026-02-05 00:43:14,609 DEBUG    root            Added [requirements.txt]
+2026-02-05 00:43:14,610 DEBUG    root            Added [app.py]
+2026-02-05 00:43:14,612 DEBUG    root            Added [Dockerfile]
+2026-02-05 00:43:14,612 INFO     ___FILE_ONLY___ Uploading tarball of [.] to [gs://qwiklabs-gcp-01-517fc49314f1_cloudbuild/source/1770252194.336021-fba27fd6f2344438aa9df0bd3820048f.tgz]
+
+2026-02-05 00:43:14,767 INFO     root            Uploading [/tmp/tmptjd_nkgx/file.tgz] to [qwiklabs-gcp-01-517fc49314f1_cloudbuild/source/1770252194.336021-fba27fd6f2344438aa9df0bd3820048f.tgz]
+2026-02-05 00:43:14,771 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:15,112 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "POST /upload/storage/v1/b/qwiklabs-gcp-01-517fc49314f1_cloudbuild/o?alt=json&name=source%2F1770252194.336021-fba27fd6f2344438aa9df0bd3820048f.tgz&uploadType=multipart HTTP/1.1" 200 1101
+2026-02-05 00:43:15,117 DEBUG    root            submitting build: <Build
+ images: ['gcr.io/qwiklabs-gcp-01-517fc49314f1/ag-web_2026-02-05_00-43']
+ secrets: []
+ source: <Source
+ storageSource: <StorageSource
+ bucket: 'qwiklabs-gcp-01-517fc49314f1_cloudbuild'
+ generation: 1770252195055406
+ object: 'source/1770252194.336021-fba27fd6f2344438aa9df0bd3820048f.tgz'>>
+ steps: [<BuildStep
+ allowExitCodes: []
+ args: ['build', '--network', 'cloudbuild', '--no-cache', '-t', 'gcr.io/qwiklabs-gcp-01-517fc49314f1/ag-web_2026-02-05_00-43', '.']
+ env: []
+ name: 'gcr.io/cloud-builders/docker'
+ secretEnv: []
+ volumes: []
+ waitFor: []>]
+ tags: []
+ warnings: []>
+2026-02-05 00:43:15,188 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:16,385 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "POST /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:16,399 INFO     ___FILE_ONLY___ Created [https://cloudbuild.googleapis.com/v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee].
+
+2026-02-05 00:43:16,399 INFO     ___FILE_ONLY___ Logs are available at [ https://console.cloud.google.com/cloud-build/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?project=338627235002 ].
+
+2026-02-05 00:43:16,402 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:16,548 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:16,567 DEBUG    root            GCS logfile url is https://storage.googleapis.com/338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt
+2026-02-05 00:43:16,569 INFO     ___FILE_ONLY___ Waiting for build to complete. Polling interval: 1 second(s).
+
+2026-02-05 00:43:16,570 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:16,574 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:16,672 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 404 257
+2026-02-05 00:43:16,675 DEBUG    root            Reading GCS logfile: 404 (no log yet; keep polling)
+2026-02-05 00:43:16,740 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:17,678 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:17,747 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:17,760 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 404 257
+2026-02-05 00:43:17,763 DEBUG    root            Reading GCS logfile: 404 (no log yet; keep polling)
+2026-02-05 00:43:17,856 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:18,766 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:18,839 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 164
+2026-02-05 00:43:18,841 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:43:18,863 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:18,967 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:19,844 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:19,970 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 216
+2026-02-05 00:43:19,972 DEBUG    root            Reading GCS logfile: 206 (read 216 bytes)
+2026-02-05 00:43:19,973 INFO     ___FILE_ONLY___ -------------------------------------------------- REMOTE BUILD OUTPUT --------------------------------------------------
+
+2026-02-05 00:43:19,975 INFO     ___FILE_ONLY___ starting build "4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee"
+
+FETCHSOURCE
+Fetching storage object: gs://qwiklabs-gcp-01-517fc49314f1_cloudbuild/source/1770252194.336021-fba27fd6f2344438aa9df0bd3820048f.tgz#1770252195055406
+
+2026-02-05 00:43:19,976 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:20,096 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:20,978 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:21,103 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:21,111 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 380
+2026-02-05 00:43:21,115 DEBUG    root            Reading GCS logfile: 206 (read 380 bytes)
+2026-02-05 00:43:21,116 INFO     ___FILE_ONLY___ Copying gs://qwiklabs-gcp-01-517fc49314f1_cloudbuild/source/1770252194.336021-fba27fd6f2344438aa9df0bd3820048f.tgz#1770252195055406...
+/ [0 files][    0.0 B/  2.6 KiB]                                                / [1 files][  2.6 KiB/  2.6 KiB]                                                
+Operation completed over 1 objects/2.6 KiB.
+
+2026-02-05 00:43:21,231 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:22,120 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:22,239 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:22,368 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 6
+2026-02-05 00:43:22,370 DEBUG    root            Reading GCS logfile: 206 (read 6 bytes)
+2026-02-05 00:43:22,371 INFO     ___FILE_ONLY___ BUILD
+
+2026-02-05 00:43:22,374 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:23,372 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:23,381 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:23,528 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:23,540 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 146
+2026-02-05 00:43:23,542 DEBUG    root            Reading GCS logfile: 206 (read 146 bytes)
+2026-02-05 00:43:23,543 INFO     ___FILE_ONLY___ Already have image (with digest): gcr.io/cloud-builders/docker
+Sending build context to Docker daemon  10.24kB
+Step 1/8 : FROM python:3.11-slim
+
+2026-02-05 00:43:24,534 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:24,545 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:24,644 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 166
+2026-02-05 00:43:24,646 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:43:24,693 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:25,649 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:25,699 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:25,807 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 39
+2026-02-05 00:43:25,809 DEBUG    root            Reading GCS logfile: 206 (read 39 bytes)
+2026-02-05 00:43:25,810 INFO     ___FILE_ONLY___ 3.11-slim: Pulling from library/python
+
+2026-02-05 00:43:25,818 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:26,812 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:26,826 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:26,937 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:26,967 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 124
+2026-02-05 00:43:26,969 DEBUG    root            Reading GCS logfile: 206 (read 124 bytes)
+2026-02-05 00:43:26,970 INFO     ___FILE_ONLY___ 0c8d55a45c0d: Pulling fs layer
+64faa99400e1: Pulling fs layer
+8cbc47ff628d: Pulling fs layer
+d85099f0969e: Pulling fs layer
+
+2026-02-05 00:43:27,945 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:27,975 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:28,077 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:28,215 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 260
+2026-02-05 00:43:28,217 DEBUG    root            Reading GCS logfile: 206 (read 260 bytes)
+2026-02-05 00:43:28,217 INFO     ___FILE_ONLY___ d85099f0969e: Verifying Checksum
+d85099f0969e: Download complete
+64faa99400e1: Verifying Checksum
+64faa99400e1: Download complete
+8cbc47ff628d: Verifying Checksum
+8cbc47ff628d: Download complete
+0c8d55a45c0d: Verifying Checksum
+0c8d55a45c0d: Download complete
+
+2026-02-05 00:43:29,084 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:29,170 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:29,220 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:29,306 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 167
+2026-02-05 00:43:29,308 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:43:30,177 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:30,289 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:30,311 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:30,461 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 287
+2026-02-05 00:43:30,462 DEBUG    root            Reading GCS logfile: 206 (read 287 bytes)
+2026-02-05 00:43:30,463 INFO     ___FILE_ONLY___ 0c8d55a45c0d: Pull complete
+64faa99400e1: Pull complete
+8cbc47ff628d: Pull complete
+d85099f0969e: Pull complete
+Digest: sha256:524557f6bd69c2bffe4a4c812be528141b2bf42bf90a1508a41c7d03b759fce3
+Status: Downloaded newer image for python:3.11-slim
+ ---> 466c0182639b
+Step 2/8 : WORKDIR /app
+
+2026-02-05 00:43:31,295 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:31,422 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:31,464 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:31,670 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 234
+2026-02-05 00:43:31,672 DEBUG    root            Reading GCS logfile: 206 (read 234 bytes)
+2026-02-05 00:43:31,672 INFO     ___FILE_ONLY___  ---> Running in 285d5f5cbc15
+Removing intermediate container 285d5f5cbc15
+ ---> 0de705db8704
+Step 3/8 : COPY requirements.txt requirements.txt
+ ---> a155deae590c
+Step 4/8 : RUN pip install --upgrade pip
+ ---> Running in 6c95ac1a6368
+
+2026-02-05 00:43:32,431 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:32,588 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:32,674 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:32,743 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 167
+2026-02-05 00:43:32,745 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:43:33,594 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:33,685 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:33,748 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:33,832 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 167
+2026-02-05 00:43:33,835 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:43:34,692 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:34,779 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:34,838 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:35,060 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 534
+2026-02-05 00:43:35,063 DEBUG    root            Reading GCS logfile: 206 (read 534 bytes)
+2026-02-05 00:43:35,064 INFO     ___FILE_ONLY___ Requirement already satisfied: pip in /usr/local/lib/python3.11/site-packages (24.0)
+Collecting pip
+  Downloading pip-26.0-py3-none-any.whl.metadata (4.7 kB)
+Downloading pip-26.0-py3-none-any.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 15.3 MB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 24.0
+    Uninstalling pip-24.0:
+      Successfully uninstalled pip-24.0
+
+2026-02-05 00:43:35,787 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:35,892 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:36,066 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:36,140 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 167
+2026-02-05 00:43:36,143 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:43:36,900 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:37,008 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:37,145 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:37,292 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 259
+2026-02-05 00:43:37,294 DEBUG    root            Reading GCS logfile: 206 (read 259 bytes)
+2026-02-05 00:43:37,295 INFO     ___FILE_ONLY___ Successfully installed pip-26.0
+[91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+2026-02-05 00:43:38,014 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:38,113 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:38,297 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:38,436 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 145
+2026-02-05 00:43:38,438 DEBUG    root            Reading GCS logfile: 206 (read 145 bytes)
+2026-02-05 00:43:38,438 INFO     ___FILE_ONLY___ [0mRemoving intermediate container 6c95ac1a6368
+ ---> 2b7a3d78a8f3
+Step 5/8 : RUN pip install -r requirements.txt
+ ---> Running in 505586c226ac
+
+2026-02-05 00:43:39,120 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:39,254 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:39,441 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:39,588 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 4031
+2026-02-05 00:43:39,592 DEBUG    root            Reading GCS logfile: 206 (read 4031 bytes)
+2026-02-05 00:43:39,592 INFO     ___FILE_ONLY___ Collecting Flask<3.0.0,>=2.2.2 (from -r requirements.txt (line 1))
+  Downloading flask-2.3.3-py3-none-any.whl.metadata (3.6 kB)
+Collecting Werkzeug<3.0.0,>=2.2.2 (from -r requirements.txt (line 2))
+  Downloading werkzeug-2.3.8-py3-none-any.whl.metadata (4.1 kB)
+Collecting flask-cors (from -r requirements.txt (line 3))
+  Downloading flask_cors-6.0.2-py3-none-any.whl.metadata (5.3 kB)
+Collecting gunicorn==20.1.0 (from -r requirements.txt (line 4))
+  Downloading gunicorn-20.1.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting google-cloud-aiplatform==1.55.0 (from -r requirements.txt (line 5))
+  Downloading google_cloud_aiplatform-1.55.0-py2.py3-none-any.whl.metadata (31 kB)
+Collecting google-cloud-discoveryengine==0.11.10 (from -r requirements.txt (line 6))
+  Downloading google_cloud_discoveryengine-0.11.10-py3-none-any.whl.metadata (5.2 kB)
+Collecting google-cloud-logging==3.1.1 (from -r requirements.txt (line 7))
+  Downloading google_cloud_logging-3.1.1-py2.py3-none-any.whl.metadata (4.2 kB)
+Requirement already satisfied: setuptools>=3.0 in /usr/local/lib/python3.11/site-packages (from gunicorn==20.1.0->-r requirements.txt (line 4)) (79.0.1)
+Collecting google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading google_api_core-2.29.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting google-auth<3.0.0dev,>=2.14.1 (from google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading google_auth-2.49.0.dev0-py3-none-any.whl.metadata (6.0 kB)
+Collecting proto-plus<2.0.0dev,>=1.22.0 (from google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading proto_plus-1.27.1-py3-none-any.whl.metadata (2.2 kB)
+Collecting protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5 (from google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading protobuf-4.25.8-cp37-abi3-manylinux2014_x86_64.whl.metadata (541 bytes)
+Collecting packaging>=14.3 (from google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting google-cloud-storage<3.0.0dev,>=1.32.0 (from google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading google_cloud_storage-2.19.0-py2.py3-none-any.whl.metadata (9.1 kB)
+Collecting google-cloud-bigquery!=3.20.0,<4.0.0dev,>=1.15.0 (from google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading google_cloud_bigquery-3.40.0-py3-none-any.whl.metadata (8.2 kB)
+Collecting google-cloud-resource-manager<3.0.0dev,>=1.3.3 (from google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading google_cloud_resource_manager-1.16.0-py3-none-any.whl.metadata (9.9 kB)
+Collecting shapely<3.0.0dev (from google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading shapely-2.1.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.8 kB)
+Collecting pydantic<3 (from google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading pydantic-2.12.5-py3-none-any.whl.metadata (90 kB)
+Collecting docstring-parser<1 (from google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading docstring_parser-0.17.0-py3-none-any.whl.metadata (3.5 kB)
+Collecting google-cloud-appengine-logging<2.0.0dev,>=0.1.0 (from google-cloud-logging==3.1.1->-r requirements.txt (line 7))
+  Downloading google_cloud_appengine_logging-1.8.0-py3-none-any.whl.metadata (10 kB)
+Collecting google-cloud-audit-log<1.0.0dev,>=0.1.0 (from google-cloud-logging==3.1.1->-r requirements.txt (line 7))
+  Downloading google_cloud_audit_log-0.4.0-py3-none-any.whl.metadata (9.3 kB)
+Collecting google-cloud-core<3.0.0dev,>=1.4.1 (from google-cloud-logging==3.1.1->-r requirements.txt (line 7))
+  Downloading google_cloud_core-2.5.0-py3-none-any.whl.metadata (3.1 kB)
+
+2026-02-05 00:43:40,263 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:40,359 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:40,594 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:40,758 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 1776
+2026-02-05 00:43:40,760 DEBUG    root            Reading GCS logfile: 206 (read 1776 bytes)
+2026-02-05 00:43:40,761 INFO     ___FILE_ONLY___ Collecting grpc-google-iam-v1<0.13dev,>=0.12.3 (from google-cloud-logging==3.1.1->-r requirements.txt (line 7))
+  Downloading grpc_google_iam_v1-0.12.7-py2.py3-none-any.whl.metadata (3.3 kB)
+Collecting Jinja2>=3.1.2 (from Flask<3.0.0,>=2.2.2->-r requirements.txt (line 1))
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting itsdangerous>=2.1.2 (from Flask<3.0.0,>=2.2.2->-r requirements.txt (line 1))
+  Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting click>=8.1.3 (from Flask<3.0.0,>=2.2.2->-r requirements.txt (line 1))
+  Downloading click-8.3.1-py3-none-any.whl.metadata (2.6 kB)
+Collecting blinker>=1.6.2 (from Flask<3.0.0,>=2.2.2->-r requirements.txt (line 1))
+  Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting MarkupSafe>=2.1.1 (from Werkzeug<3.0.0,>=2.2.2->-r requirements.txt (line 2))
+  Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting googleapis-common-protos<2.0.0,>=1.56.2 (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading googleapis_common_protos-1.72.0-py3-none-any.whl.metadata (9.4 kB)
+Collecting requests<3.0.0,>=2.18.0 (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+
+2026-02-05 00:43:41,370 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:41,500 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:41,763 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:41,929 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 2763
+2026-02-05 00:43:41,931 DEBUG    root            Reading GCS logfile: 206 (read 2763 bytes)
+2026-02-05 00:43:41,932 INFO     ___FILE_ONLY___ Collecting grpcio<2.0.0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading grpcio-1.76.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.7 kB)
+Collecting grpcio-status<2.0.0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading grpcio_status-1.76.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting pyasn1-modules>=0.2.1 (from google-auth<3.0.0dev,>=2.14.1->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading pyasn1_modules-0.4.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting cryptography>=38.0.3 (from google-auth<3.0.0dev,>=2.14.1->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading cryptography-46.0.4-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (5.7 kB)
+Collecting google-resumable-media<3.0.0,>=2.0.0 (from google-cloud-bigquery!=3.20.0,<4.0.0dev,>=1.15.0->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading google_resumable_media-2.8.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting python-dateutil<3.0.0,>=2.8.2 (from google-cloud-bigquery!=3.20.0,<4.0.0dev,>=1.15.0->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+INFO: pip is looking at multiple versions of google-cloud-resource-manager to determine which version is compatible with other requirements. This could take a while.
+Collecting google-cloud-resource-manager<3.0.0dev,>=1.3.3 (from google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading google_cloud_resource_manager-1.15.0-py3-none-any.whl.metadata (9.9 kB)
+  Downloading google_cloud_resource_manager-1.14.2-py3-none-any.whl.metadata (9.6 kB)
+  Downloading google_cloud_resource_manager-1.14.1-py2.py3-none-any.whl.metadata (5.4 kB)
+  Downloading google_cloud_resource_manager-1.14.0-py2.py3-none-any.whl.metadata (5.4 kB)
+Collecting google-crc32c<2.0dev,>=1.0 (from google-cloud-storage<3.0.0dev,>=1.32.0->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading google_crc32c-1.8.0-cp311-cp311-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl.metadata (1.7 kB)
+Collecting grpcio<2.0.0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading grpcio-1.78.0rc2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.8 kB)
+
+2026-02-05 00:43:42,508 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:42,647 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:42,934 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:43,099 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 3213
+2026-02-05 00:43:43,100 DEBUG    root            Reading GCS logfile: 206 (read 3213 bytes)
+2026-02-05 00:43:43,101 INFO     ___FILE_ONLY___ Collecting typing-extensions~=4.12 (from grpcio<2.0.0,>=1.33.2->google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+INFO: pip is looking at multiple versions of grpcio-status to determine which version is compatible with other requirements. This could take a while.
+Collecting grpcio-status<2.0.0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading grpcio_status-1.75.1-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.75.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.74.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.73.1-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.73.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.72.2-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.72.1-py3-none-any.whl.metadata (1.1 kB)
+INFO: pip is still looking at multiple versions of grpcio-status to determine which version is compatible with other requirements. This could take a while.
+  Downloading grpcio_status-1.71.2-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.71.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.70.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.69.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.68.1-py3-none-any.whl.metadata (1.1 kB)
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+  Downloading grpcio_status-1.68.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.67.1-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.67.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.66.2-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.66.1-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.66.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.65.5-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.65.4-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.65.2-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.65.1-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.64.3-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.64.1-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.64.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.63.2-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.63.0-py3-none-any.whl.metadata (1.1 kB)
+  Downloading grpcio_status-1.62.3-py3-none-any.whl.metadata (1.3 kB)
+Collecting annotated-types>=0.6.0 (from pydantic<3->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+
+2026-02-05 00:43:43,653 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:43,739 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:44,103 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:44,198 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 2287
+2026-02-05 00:43:44,200 DEBUG    root            Reading GCS logfile: 206 (read 2287 bytes)
+2026-02-05 00:43:44,201 INFO     ___FILE_ONLY___ Collecting pydantic-core==2.41.5 (from pydantic<3->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading pydantic_core-2.41.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic<3->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting six>=1.5 (from python-dateutil<3.0.0,>=2.8.2->google-cloud-bigquery!=3.20.0,<4.0.0dev,>=1.15.0->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting charset_normalizer<4,>=2 (from requests<3.0.0,>=2.18.0->google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading charset_normalizer-3.4.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (37 kB)
+Collecting idna<4,>=2.5 (from requests<3.0.0,>=2.18.0->google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting urllib3<3,>=1.21.1 (from requests<3.0.0,>=2.18.0->google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+Collecting certifi>=2017.4.17 (from requests<3.0.0,>=2.18.0->google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0dev,>=1.34.1->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading certifi-2026.1.4-py3-none-any.whl.metadata (2.5 kB)
+
+2026-02-05 00:43:44,745 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:44,852 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:45,203 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:45,355 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 2178
+2026-02-05 00:43:45,357 DEBUG    root            Reading GCS logfile: 206 (read 2178 bytes)
+2026-02-05 00:43:45,357 INFO     ___FILE_ONLY___ Collecting numpy>=1.21 (from shapely<3.0.0dev->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading numpy-2.4.2-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting cffi>=2.0.0 (from cryptography>=38.0.3->google-auth<3.0.0dev,>=2.14.1->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading cffi-2.0.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
+Collecting pycparser (from cffi>=2.0.0->cryptography>=38.0.3->google-auth<3.0.0dev,>=2.14.1->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+Collecting pyasn1<0.7.0,>=0.6.1 (from pyasn1-modules>=0.2.1->google-auth<3.0.0dev,>=2.14.1->google-cloud-aiplatform==1.55.0->-r requirements.txt (line 5))
+  Downloading pyasn1-0.6.2-py3-none-any.whl.metadata (8.4 kB)
+Downloading gunicorn-20.1.0-py3-none-any.whl (79 kB)
+Downloading google_cloud_aiplatform-1.55.0-py2.py3-none-any.whl (5.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.1/5.1 MB 78.3 MB/s  0:00:00
+Downloading google_cloud_discoveryengine-0.11.10-py3-none-any.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 67.1 MB/s  0:00:00
+Downloading google_cloud_logging-3.1.1-py2.py3-none-any.whl (188 kB)
+Downloading flask-2.3.3-py3-none-any.whl (96 kB)
+Downloading werkzeug-2.3.8-py3-none-any.whl (242 kB)
+Downloading docstring_parser-0.17.0-py3-none-any.whl (36 kB)
+Downloading google_api_core-2.29.0-py3-none-any.whl (173 kB)
+Downloading google_auth-2.49.0.dev0-py3-none-any.whl (236 kB)
+Downloading google_cloud_appengine_logging-1.8.0-py3-none-any.whl (18 kB)
+Downloading google_cloud_audit_log-0.4.0-py3-none-any.whl (44 kB)
+Downloading google_cloud_bigquery-3.40.0-py3-none-any.whl (261 kB)
+Downloading google_cloud_core-2.5.0-py3-none-any.whl (29 kB)
+Downloading google_cloud_resource_manager-1.14.0-py2.py3-none-any.whl (384 kB)
+Downloading google_cloud_storage-2.19.0-py2.py3-none-any.whl (131 kB)
+
+2026-02-05 00:43:45,858 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:45,972 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:46,360 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:46,682 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 3906
+2026-02-05 00:43:46,684 DEBUG    root            Reading GCS logfile: 206 (read 3906 bytes)
+2026-02-05 00:43:46,684 INFO     ___FILE_ONLY___ Downloading google_crc32c-1.8.0-cp311-cp311-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl (33 kB)
+Downloading google_resumable_media-2.8.0-py3-none-any.whl (81 kB)
+Downloading googleapis_common_protos-1.72.0-py3-none-any.whl (297 kB)
+Downloading grpc_google_iam_v1-0.12.7-py2.py3-none-any.whl (26 kB)
+Downloading grpcio-1.78.0rc2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (6.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.7/6.7 MB 136.0 MB/s  0:00:00
+Downloading grpcio_status-1.62.3-py3-none-any.whl (14 kB)
+Downloading proto_plus-1.27.1-py3-none-any.whl (50 kB)
+Downloading protobuf-4.25.8-cp37-abi3-manylinux2014_x86_64.whl (294 kB)
+Downloading pydantic-2.12.5-py3-none-any.whl (463 kB)
+Downloading pydantic_core-2.41.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 107.9 MB/s  0:00:00
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+Downloading charset_normalizer-3.4.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (151 kB)
+Downloading idna-3.11-py3-none-any.whl (71 kB)
+Downloading shapely-2.1.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 118.9 MB/s  0:00:00
+Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Downloading urllib3-2.6.3-py3-none-any.whl (131 kB)
+Downloading flask_cors-6.0.2-py3-none-any.whl (13 kB)
+Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Downloading certifi-2026.1.4-py3-none-any.whl (152 kB)
+Downloading click-8.3.1-py3-none-any.whl (108 kB)
+Downloading cryptography-46.0.4-cp311-abi3-manylinux_2_34_x86_64.whl (4.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 139.5 MB/s  0:00:00
+Downloading cffi-2.0.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (215 kB)
+Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Downloading numpy-2.4.2-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 149.5 MB/s  0:00:00
+Downloading packaging-26.0-py3-none-any.whl (74 kB)
+Downloading pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+Downloading pyasn1-0.6.2-py3-none-any.whl (83 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+Installing collected packages: urllib3, typing-extensions, six, pycparser, pyasn1, protobuf, packaging, numpy, MarkupSafe, itsdangerous, idna, gunicorn, google-crc32c, docstring-parser, click, charset_normalizer, certifi, blinker, annotated-types, Werkzeug, typing-inspection, shapely, requests, python-dateutil, pydantic-core, pyasn1-modules, proto-plus, Jinja2, grpcio, googleapis-common-protos, google-resumable-media, cffi, pydantic, grpcio-status, google-cloud-audit-log, Flask, cryptography, grpc-google-iam-v1, google-auth, flask-cors, google-api-core, google-cloud-core, google-cloud-storage, google-cloud-resource-manager, google-cloud-discoveryengine, google-cloud-bigquery, google-cloud-appengine-logging, google-cloud-logging, google-cloud-aiplatform
+
+2026-02-05 00:43:46,978 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:47,083 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:47,687 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:47,756 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:43:47,759 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:43:48,090 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:48,200 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:48,762 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:48,839 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:43:48,842 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:43:49,207 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:49,295 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:49,845 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:49,942 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:43:49,945 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:43:50,300 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:50,408 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:50,947 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:51,017 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:43:51,019 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:43:51,414 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:51,517 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:52,022 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:52,097 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:43:52,099 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:43:52,524 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:52,630 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:53,101 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:53,181 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:43:53,184 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:43:53,637 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:53,949 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:54,187 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:54,421 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:43:54,424 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:43:54,958 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:55,085 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:55,427 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:55,502 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:43:55,505 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:43:56,093 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:56,237 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:56,508 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:56,574 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:43:56,576 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:43:57,245 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:57,354 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:57,579 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:57,652 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:43:57,655 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:43:58,362 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:58,454 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:58,657 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:58,737 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:43:58,739 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:43:59,461 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:43:59,567 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:43:59,741 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:43:59,899 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 1406
+2026-02-05 00:43:59,902 DEBUG    root            Reading GCS logfile: 206 (read 1406 bytes)
+2026-02-05 00:43:59,902 INFO     ___FILE_ONLY___ 
+Successfully installed Flask-2.3.3 Jinja2-3.1.6 MarkupSafe-3.0.3 Werkzeug-2.3.8 annotated-types-0.7.0 blinker-1.9.0 certifi-2026.1.4 cffi-2.0.0 charset_normalizer-3.4.4 click-8.3.1 cryptography-46.0.4 docstring-parser-0.17.0 flask-cors-6.0.2 google-api-core-2.29.0 google-auth-2.49.0.dev0 google-cloud-aiplatform-1.55.0 google-cloud-appengine-logging-1.8.0 google-cloud-audit-log-0.4.0 google-cloud-bigquery-3.40.0 google-cloud-core-2.5.0 google-cloud-discoveryengine-0.11.10 google-cloud-logging-3.1.1 google-cloud-resource-manager-1.14.0 google-cloud-storage-2.19.0 google-crc32c-1.8.0 google-resumable-media-2.8.0 googleapis-common-protos-1.72.0 grpc-google-iam-v1-0.12.7 grpcio-1.78.0rc2 grpcio-status-1.62.3 gunicorn-20.1.0 idna-3.11 itsdangerous-2.2.0 numpy-2.4.2 packaging-26.0 proto-plus-1.27.1 protobuf-4.25.8 pyasn1-0.6.2 pyasn1-modules-0.4.2 pycparser-3.0 pydantic-2.12.5 pydantic-core-2.41.5 python-dateutil-2.9.0.post0 requests-2.32.5 shapely-2.1.2 six-1.17.0 typing-extensions-4.15.0 typing-inspection-0.4.2 urllib3-2.6.3
+[91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+2026-02-05 00:44:00,575 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:00,701 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:00,905 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:00,995 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:00,997 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:01,707 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:01,817 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:01,999 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:02,072 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:02,074 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:02,824 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:02,915 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:03,077 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:03,158 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:03,161 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:03,923 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:04,062 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:04,163 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:04,238 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:04,240 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:05,067 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:05,169 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:05,242 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:05,332 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:05,334 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:06,177 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:06,288 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:06,336 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:06,410 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:06,411 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:07,295 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:07,394 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:07,414 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:07,489 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:07,491 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:08,401 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:08,493 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:08,516 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:08,635 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 531
+2026-02-05 00:44:08,637 DEBUG    root            Reading GCS logfile: 206 (read 531 bytes)
+2026-02-05 00:44:08,637 INFO     ___FILE_ONLY___ [0mRemoving intermediate container 505586c226ac
+ ---> 69e5955477e5
+Step 6/8 : COPY . .
+ ---> 13d7b47b3764
+Step 7/8 : EXPOSE 8080
+ ---> Running in 21d54bb1b5e5
+Removing intermediate container 21d54bb1b5e5
+ ---> cb52a420a743
+Step 8/8 : CMD ["gunicorn", "--bind", ":8080", "--workers", "1", "--threads", "4", "app:app"]
+ ---> Running in 3184e391d92e
+Removing intermediate container 3184e391d92e
+ ---> c84d32edbe6a
+Successfully built c84d32edbe6a
+Successfully tagged gcr.io/qwiklabs-gcp-01-517fc49314f1/ag-web_2026-02-05_00-43:latest
+
+2026-02-05 00:44:09,524 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:09,640 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:09,661 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:09,822 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 521
+2026-02-05 00:44:09,824 DEBUG    root            Reading GCS logfile: 206 (read 521 bytes)
+2026-02-05 00:44:09,825 INFO     ___FILE_ONLY___ PUSH
+Pushing gcr.io/qwiklabs-gcp-01-517fc49314f1/ag-web_2026-02-05_00-43
+The push refers to repository [gcr.io/qwiklabs-gcp-01-517fc49314f1/ag-web_2026-02-05_00-43]
+137d22bed4b4: Preparing
+574be5d38078: Preparing
+b756e44ed70c: Preparing
+4a51ad5932df: Preparing
+eb71c98de9ef: Preparing
+b69aea4cac7d: Preparing
+40b88e8d19a2: Preparing
+dfd9efb4ec4c: Preparing
+a8ff6f8cbdfd: Preparing
+40b88e8d19a2: Layer already exists
+dfd9efb4ec4c: Layer already exists
+b69aea4cac7d: Layer already exists
+a8ff6f8cbdfd: Layer already exists
+
+2026-02-05 00:44:10,668 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:10,808 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:10,827 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:11,052 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 21
+2026-02-05 00:44:11,054 DEBUG    root            Reading GCS logfile: 206 (read 21 bytes)
+2026-02-05 00:44:11,056 INFO     ___FILE_ONLY___ 4a51ad5932df: Pushed
+
+2026-02-05 00:44:11,814 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:11,912 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:12,058 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:12,200 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 42
+2026-02-05 00:44:12,202 DEBUG    root            Reading GCS logfile: 206 (read 42 bytes)
+2026-02-05 00:44:12,203 INFO     ___FILE_ONLY___ 137d22bed4b4: Pushed
+eb71c98de9ef: Pushed
+
+2026-02-05 00:44:12,918 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:13,021 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:13,205 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:13,366 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 21
+2026-02-05 00:44:13,369 DEBUG    root            Reading GCS logfile: 206 (read 21 bytes)
+2026-02-05 00:44:13,369 INFO     ___FILE_ONLY___ b756e44ed70c: Pushed
+
+2026-02-05 00:44:14,028 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:14,114 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:14,371 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:14,495 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:14,497 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:15,120 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:15,228 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:15,499 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:15,574 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:15,576 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:16,235 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:16,356 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:16,578 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:16,650 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:16,652 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:17,362 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:17,468 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:17,655 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:17,732 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:17,734 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:18,474 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:18,579 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:18,736 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:18,803 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:18,805 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:19,585 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:19,671 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:19,807 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:19,882 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:19,884 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:20,677 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:20,770 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:20,887 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:20,955 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:20,958 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:21,777 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:21,864 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:21,961 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:22,043 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:22,045 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:22,870 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:22,971 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:23,047 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:23,117 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:23,119 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:23,978 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:24,122 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:24,143 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:24,193 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:24,195 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:25,150 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:25,197 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:25,284 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:25,287 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:25,288 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:26,290 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:26,297 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:26,390 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:26,392 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:26,413 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:27,398 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:27,424 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:27,519 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:27,521 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:27,556 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:28,524 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:28,564 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:28,662 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 21
+2026-02-05 00:44:28,665 DEBUG    root            Reading GCS logfile: 206 (read 21 bytes)
+2026-02-05 00:44:28,666 INFO     ___FILE_ONLY___ 574be5d38078: Pushed
+
+2026-02-05 00:44:28,699 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:29,669 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:29,708 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:29,768 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:29,770 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:29,819 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:30,772 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:30,827 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:30,924 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:30,981 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 206 104
+2026-02-05 00:44:30,983 DEBUG    root            Reading GCS logfile: 206 (read 104 bytes)
+2026-02-05 00:44:30,984 INFO     ___FILE_ONLY___ latest: digest: sha256:d340fa399bbd850110ec25f7eb666f6ac37d171172aaf32848203e7375ffd870 size: 2205
+DONE
+
+2026-02-05 00:44:31,933 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:31,987 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:32,028 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:32,055 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:32,058 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:33,038 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:33,062 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:33,156 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:33,158 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:33,192 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:34,161 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:34,200 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:34,230 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:34,233 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:34,290 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:35,235 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:35,297 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:35,320 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:35,324 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:35,405 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:36,327 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:36,401 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:36,403 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:36,416 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:36,511 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:37,407 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:37,485 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:37,487 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:37,519 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:37,626 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:38,489 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:38,558 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:38,560 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:38,634 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2026-02-05 00:44:38,767 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/qwiklabs-gcp-01-517fc49314f1/locations/global/builds/4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee?alt=json HTTP/1.1" 200 None
+2026-02-05 00:44:39,562 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:39,646 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:39,649 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:40,653 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-02-05 00:44:40,728 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /338627235002.cloudbuild-logs.googleusercontent.com/log-4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee.txt HTTP/1.1" 416 168
+2026-02-05 00:44:40,731 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2026-02-05 00:44:40,732 INFO     ___FILE_ONLY___ -------------------------------------------------------------------------------------------------------------------------
+
+2026-02-05 00:44:40,733 DEBUG    root            Chosen display Format:
+        table(
+          id,
+          createTime.date('%Y-%m-%dT%H:%M:%S%Oz', undefined='-'),
+          duration(start=startTime,end=finishTime,precision=0,calendar=false,undefined="  -").slice(2:).join(""):label=DURATION,
+          build_source(undefined="-"):label=SOURCE,
+          build_images(undefined="-"):label=IMAGES,
+          status
+        )
+      
+2026-02-05 00:44:40,735 INFO     root            Display format: "
+        table(
+          id,
+          createTime.date('%Y-%m-%dT%H:%M:%S%Oz', undefined='-'),
+          duration(start=startTime,end=finishTime,precision=0,calendar=false,undefined="  -").slice(2:).join(""):label=DURATION,
+          build_source(undefined="-"):label=SOURCE,
+          build_images(undefined="-"):label=IMAGES,
+          status
+        )
+      "
+2026-02-05 00:44:40,795 INFO     ___FILE_ONLY___ ID
+2026-02-05 00:44:40,796 INFO     ___FILE_ONLY___                                     
+2026-02-05 00:44:40,796 INFO     ___FILE_ONLY___ CREATE_TIME
+2026-02-05 00:44:40,796 INFO     ___FILE_ONLY___                 
+2026-02-05 00:44:40,796 INFO     ___FILE_ONLY___ DURATION
+2026-02-05 00:44:40,796 INFO     ___FILE_ONLY___   
+2026-02-05 00:44:40,796 INFO     ___FILE_ONLY___ SOURCE
+2026-02-05 00:44:40,796 INFO     ___FILE_ONLY___                                                                                                       
+2026-02-05 00:44:40,796 INFO     ___FILE_ONLY___ IMAGES
+2026-02-05 00:44:40,796 INFO     ___FILE_ONLY___                                                                  
+2026-02-05 00:44:40,796 INFO     ___FILE_ONLY___ STATUS
+2026-02-05 00:44:40,796 INFO     ___FILE_ONLY___ 
+
+2026-02-05 00:44:40,797 INFO     ___FILE_ONLY___ 4d55bfc9-ad4a-4b0d-91e0-6172ec5380ee
+2026-02-05 00:44:40,797 INFO     ___FILE_ONLY___   
+2026-02-05 00:44:40,797 INFO     ___FILE_ONLY___ 2026-02-05T00:43:15+00:00
+2026-02-05 00:44:40,797 INFO     ___FILE_ONLY___   
+2026-02-05 00:44:40,797 INFO     ___FILE_ONLY___ 1M14S
+2026-02-05 00:44:40,797 INFO     ___FILE_ONLY___      
+2026-02-05 00:44:40,797 INFO     ___FILE_ONLY___ gs://qwiklabs-gcp-01-517fc49314f1_cloudbuild/source/1770252194.336021-fba27fd6f2344438aa9df0bd3820048f.tgz
+2026-02-05 00:44:40,797 INFO     ___FILE_ONLY___   
+2026-02-05 00:44:40,797 INFO     ___FILE_ONLY___ gcr.io/qwiklabs-gcp-01-517fc49314f1/ag-web_2026-02-05_00-43 (+1 more)
+2026-02-05 00:44:40,797 INFO     ___FILE_ONLY___   
+2026-02-05 00:44:40,797 INFO     ___FILE_ONLY___ SUCCESS
+2026-02-05 00:44:40,797 INFO     ___FILE_ONLY___ 
+
+2026-02-05 00:44:40,798 DEBUG    root            SDK update checks are disabled.
